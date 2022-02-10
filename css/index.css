@@ -1,0 +1,120 @@
+html, body {
+    height: 100%;
+    margin: 0;
+}
+
+/* width */
+::-webkit-scrollbar {
+    width: 4px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+    background: #2C294F;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+    background: #2FE2DD;
+    border-radius: 5px;
+}
+
+::selection {
+    background: #2FE2DD;
+}
+
+@font-face {
+    font-family: "Heavitas";
+    src: url("/fonts/Heavitas.ttf") format("truetype");
+}
+
+@font-face {
+    font-family: "Montserrat-Regular";
+    src: url("/fonts/Montserrat-Regular.ttf") format("truetype");
+}
+
+.home-header{
+    background-color: #2C294F;
+    padding-top: 20vh;
+    padding-bottom: 20vh;
+}
+
+
+.naam{
+    font-family: "Heavitas";
+    color: white;
+    font-size: 120px;
+    display: flex;
+    justify-content: center;
+    cursor: default;
+    transition: 0.5s !important;
+}
+
+.naam:hover{
+    color: #2C294F; /* zet hover kleur op zwart */
+    text-decoration: none; /* alle standaard <a> text-decorations er af halen */
+    text-shadow: 0 -1px 0 #FFF, /* een scherpe text-shadow in elke richting op sturen wat 2 pixels groot is voor de rand */
+    1px -1px 0 #FFFFFF,
+    1px 0 0 #FFFFFF,
+    1px 1px 0 #FFFFFF,
+    0 1px 0 #FFFFFF,
+    -1px 1px 0 #FFFFFF,
+    -1px 0 0 #FFFFFF,
+    -1px -1px 0 #FFFFFF;
+}
+
+.naam p{
+    margin: 0;
+    text-align: center;
+}
+
+.tekst p{
+    font-family: "Montserrat-Regular", Montserrat;
+    color: white;
+    font-size: 30px;
+    /*display: flex;*/
+    /*flex-direction: column;*/
+    /*align-items: center;*/
+    text-align: center;
+}
+
+.nicetomeetyou{
+    padding-top: 20vh;
+    padding-bottom: 20vh;
+    background-color: green;
+}
+
+.projects{
+    padding-top: 20vh;
+    padding-bottom: 20vh;
+    background-color: deeppink;
+}
+
+.skills{
+    padding-top: 20vh;
+    padding-bottom: 20vh;
+    background-color: orange;
+}
+
+.gotopbutton{
+    opacity: 0;
+    pointer-events: none;
+    position: fixed;
+    width: 60px;
+    height: 60px;
+    background: linear-gradient(60deg, #0900b6, #0066ff);
+    bottom: 40px;
+    right: 50px;
+    border-radius: 30px;
+
+    text-decoration: none;
+    text-align: center;
+    line-height: 60px;
+    font-size: 32px;
+    color: white;
+    transition: all .2s;
+}
+
+.gotopbutton:hover{
+    transform: translateY(-7px);
+}
