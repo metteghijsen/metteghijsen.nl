@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="css/index.css">
     <link rel="icon" href="">
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css">
     <!-- Latest compiled and minified CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css"
           integrity="sha384-HSMxcRTRxnN+Bdg0JdbxYKrThecOKuH5zCYotlSAcp1+c8xmyTe9GYg1l9a69psu" crossorigin="anonymous">
@@ -25,7 +26,7 @@
 </head>
 <body>
 
-<div class="home-header">
+<div class="home-header" id="home-header">
     <div class="container">
         <div class="row">
             <div class="col-sm-12">
@@ -39,11 +40,14 @@
                         Want to learn more about me? </p>
                 </div>
             </div>
+            <div class="col-sm-12">
+                <a class="scrolldown" href="#nicetomeetyou"><i class="bi bi-chevron-down"></i></a>
+            </div>
         </div>
     </div>
 </div>
 
-<div class="nicetomeetyou">
+<div class="nicetomeetyou" id="nicetomeetyou">
     <div class="container">
         <div class="row">
 
@@ -70,7 +74,8 @@
     </div>
 </div>
 
-<a class="gotopbutton" id="gotopbutton" href="#"><i class="bi bi-arrow-up-short"></i></a>
+<a class="gotopbutton" id="gotopbutton" href="#home-header"><i class="bi bi-arrow-up-short"></i></a>
+</div>
 
 <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
 <script>
