@@ -68,8 +68,8 @@ ul.topnav li a:hover {
 
 .home-header{
     background-color: var(--background-color);
-    padding-top: 8vh;
-    padding-bottom: 8vh;
+    padding-top: 6vh;
+    padding-bottom: 6vh;
 }
 
 .naam{
@@ -162,7 +162,7 @@ ul.topnav li a:hover {
 }
 
 .nicetomeetyou{
-    padding-top: 20vh;
+    padding-top: 15vh;
     padding-bottom: 20vh;
     background-color: var(--background-color);
 }

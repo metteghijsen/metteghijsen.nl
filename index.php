@@ -16,8 +16,8 @@
 <body>
 
 <ul class="topnav">
+    <li><a href="#nicetomeetyou">About</a></li>
     <li><a href="">Projects</a></li>
-    <li><a href="">About</a></li>
     <li><a href="">Contact</a></li>
 </ul>
 
@@ -83,7 +83,15 @@
     <div class="container">
         <div class="row">
             <div class="col-sm-12">
-
+                <div class="cases-row-1">
+                    <h1>cases cases cases cases</h1>
+                </div>
+                <div class="cases-row-2">
+                    <h1>cases cases cases cases</h1>
+                </div>
+                <div class="cases-row-3">
+                    <h1>cases cases cases cases</h1>
+                </div>
             </div>
         </div>
 
