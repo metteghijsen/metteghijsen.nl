@@ -56,14 +56,20 @@ ul.topnav li a {
     color: white;
     text-align: center;
     font-family: Poppins, sans-serif;
-    padding: 24px 28px;
+    padding: 30px 35px;
     text-decoration: none;
+    transition: ease .5s;
+}
+
+ul.topnav li a:hover {
+    opacity: .5;
+    transition: ease .5s;
 }
 
 .home-header{
     background-color: var(--background-color);
-    padding-top: 22vh;
-    padding-bottom: 22vh;
+    padding-top: 18vh;
+    padding-bottom: 18vh;
 }
 
 .naam{
@@ -98,13 +104,47 @@ ul.topnav li a {
     font-family: "Montserrat-Regular", Montserrat;
     color: white;
     font-size: 30px;
-    /*display: flex;*/
-    /*flex-direction: column;*/
-    /*align-items: center;*/
     text-align: center;
 }
 
+.shapes{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.circle{
+    background-color: var(--background-color);
+    padding: 15px;
+    border: solid 6px var(--red);
+    border-radius: 50%;
+    margin: 5px;
+}
+
+.triangle{
+    border-left: 20px solid transparent;
+    border-right: 20px solid transparent;
+    border-bottom: 35px solid var(--blue);
+    margin: 5px;
+}
+
+.square{
+    background-color: var(--background-color);
+    padding: 15px;
+    border: solid 6px var(--yellow);
+    margin: 5px;
+}
+
+.diamond{
+    background-color: var(--green);
+    padding: 15px;
+    transform: rotate(45deg);
+    margin: 10px;
+}
+
 .scrolldown{
+    margin-top: 5%;
+    bottom: 0;
     display: flex;
     justify-content: center;
     text-decoration: none;
@@ -142,12 +182,8 @@ ul.topnav li a {
     opacity: 0;
     pointer-events: none;
     position: fixed;
-    /*width: 60px;*/
-    /*height: 60px;*/
-    /*background: #2FE2DD;*/
     bottom: 40px;
     right: 50px;
-    /*border-radius: 30px;*/
 
     text-decoration: none;
     text-align: center;

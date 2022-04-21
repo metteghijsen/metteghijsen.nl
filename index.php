@@ -15,18 +15,16 @@
 <body>
 
     <ul class="topnav">
-        <li><a href="">Contact</a></li>
         <li><a href="">Projects</a></li>
         <li><a href="">About</a></li>
+        <li><a href="">Contact</a></li>
     </ul>
 
 <div class="home-header" id="home-header">
     <div class="container">
         <div class="row">
-            <div class="col-md-12">
-                <div class="naam" data-aos="fade-up" data-aos-duration="1000">
+            <div class="col-sm-12 naam" data-aos="fade-up" data-aos-duration="1000">
                     <p>Mette Ghijsen</p>
-                </div>
             </div>
             <div class="col-sm-12">
                 <div class="tekst" data-aos="fade-right" data-aos-duration="1000">
@@ -34,8 +32,14 @@
                         Want to learn more about me? </p>
                 </div>
             </div>
+            <div class="col-sm-12 shapes">
+                <div class="circle"></div>
+                <div class="triangle"></div>
+                <div class="square"></div>
+                <div class="diamond"></div>
+            </div>
             <div class="col-sm-12">
-                <a class="scrolldown" href="#nicetomeetyou"><i class="bi bi-chevron-down"></i></a>
+                <a class="scrolldown" href="#nicetomeetyou"><i class="bi bi-arrow-down-short"></i></a>
             </div>
         </div>
     </div>
