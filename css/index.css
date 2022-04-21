@@ -1,4 +1,11 @@
-/*CSS document*/
+:root{
+    --background-color: black;
+    --blue: #4369FB;
+    --red: #E85D5D;
+    --yellow: #FFB650;
+    --green: #09CC71;
+    --text-color: white;
+}
 
 html, body {
     height: 100%;
@@ -7,150 +14,215 @@ html, body {
     scroll-behavior: smooth;
 }
 
-/*Scrollbar*/
-
 /* width */
 ::-webkit-scrollbar {
-    width: 6px;
-}
-
-/* Track */
-::-webkit-scrollbar-track {
-    background: #2C294F;
-}
-
-/* Handle */
-::-webkit-scrollbar-thumb {
-    background: #2FE2DD;
-    border-radius: 5px;
+    display: none;
 }
 
 ::selection {
-    background: #2FE2DD;
+    background: var(--green);
 }
 
-/*Fonts*/
 @font-face {
-    font-family: "Heavitas";
-    src: url("../fonts/Heavitas.ttf") format("truetype");
+    font-family: "Poppins-Regular";
+    src: url("../fonts/Poppins-Regular.woff") format("woff");
+}
+
+@font-face {
+    font-family: "Poppins-Bold";
+    src: url("../fonts/Poppins-Bold.woff") format("woff");
 }
 
 @font-face {
     font-family: "Montserrat-Regular";
-    src: url("../fonts/Montserrat-Regular.ttf") format("truetype");
+    src: url("../fonts/Montserrat-Regular.woff") format("woff");
 }
 
-/*Homepage*/
+.topnav{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    transform: translateY(-2.1vh);
+    display: flex;
+    list-style-type: none;
+    padding: 10px;
+    overflow: hidden;
+    justify-content: flex-end;
+}
+
+ul.topnav li a {
+    display: block;
+    color: white;
+    text-align: center;
+    font-family: Poppins, sans-serif;
+    padding: 30px 35px;
+    text-decoration: none;
+    transition: ease .5s;
+}
+
+ul.topnav li a:hover {
+    opacity: .5;
+    transition: ease .5s;
+}
+
 .home-header{
-    background-image: url("../img/tijdelijkeafbeelding.png");
-    width: 100%;
-    height: 100vh;
-    animation: fadein 1s;
+    background-color: var(--background-color);
+    padding-top: 6vh;
+    padding-bottom: 6vh;
 }
-
 
 .naam{
-    margin-top: 35vh;
-    /*font-family: "Heavitas";*/
-    /*color: white;*/
-    /*font-size: 120px;*/
-    /*display: flex;*/
-    /*justify-content: center;*/
-    /*cursor: default;*/
-    /*!*transition: 0.5s !important;*!*/
+    color: var(--text-color);
+    font-size: 120px;
     display: flex;
     justify-content: center;
+    cursor: default;
+    transition: 0.5s !important;
+    margin-top: 6%;
 }
 
-/*.naam:hover{*/
-/*    color: transparent; !* zet hover kleur op zwart *!*/
-/*    text-decoration: none; !* alle standaard <a> text-decorations er af halen *!*/
-/*    text-shadow: 0 -1px 0 #FFF, !* een scherpe text-shadow in elke richting op sturen wat 2 pixels groot is voor de rand *!*/
-/*    1px -1px 0 #FFFFFF,*/
-/*    1px 0 0 #FFFFFF,*/
-/*    1px 1px 0 #FFFFFF,*/
-/*    0 1px 0 #FFFFFF,*/
-/*    -1px 1px 0 #FFFFFF,*/
-/*    -1px 0 0 #FFFFFF,*/
-/*    -1px -1px 0 #FFFFFF;*/
-/*}*/
+.naam:hover{
+    color: var(--background-color);
+    text-decoration: none;
+    text-shadow: 0 -1px 0 #FFF,
+    1px -1px 0 #FFFFFF,
+    1px 0 0 #FFFFFF,
+    1px 1px 0 #FFFFFF,
+    0 1px 0 #FFFFFF,
+    -1px 1px 0 #FFFFFF,
+    -1px 0 0 #FFFFFF,
+    -1px -1px 0 #FFFFFF;
+}
 
-/*.naam p{*/
-/*    margin: 0;*/
-/*    text-align: center;*/
-/*}*/
+.naam p{
+    margin: 0;
+    text-align: center;
+    font-family: Poppins-Bold;
+}
 
 .tekst p{
-    font-family: "Montserrat-Regular";
+    font-family: "Montserrat-Regular", Montserrat;
     color: white;
     font-size: 30px;
-    line-height: 40px;
-    margin-top: 4%;
-    /*display: flex;*/
-    /*flex-direction: column;*/
-    /*align-items: center;*/
     text-align: center;
 }
 
+.shapes{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.circle{
+    background-color: var(--background-color);
+    padding: 15px;
+    border: solid 6px var(--red);
+    border-radius: 50%;
+    margin: 5px;
+}
+
+.triangle{
+    border-left: 20px solid transparent;
+    border-right: 20px solid transparent;
+    border-bottom: 35px solid var(--blue);
+    margin: 5px;
+}
+
+.square{
+    background-color: var(--background-color);
+    padding: 15px;
+    border: solid 6px var(--yellow);
+    margin: 5px;
+}
+
+.diamond{
+    background-color: var(--green);
+    padding: 15px;
+    transform: rotate(45deg);
+    margin: 10px;
+}
+
 .scrolldown{
+    margin-top: 5%;
+    bottom: 0;
     display: flex;
     justify-content: center;
     text-decoration: none;
     text-align: center;
     line-height: 60px;
     font-size: 60px;
-    color: white;
+    color: var(--text-color) ;
     transition: all .2s;
-    margin-top: 30vh
 }
 
 .scrolldown:hover{
-    transform: translateY(-10px) !important;
-    color: white !important;
+    transform: translateY(10px) !important;
+    color: var(--text-color)  !important;
 }
 
 .nicetomeetyou{
-    padding-top: 20vh;
+    padding-top: 15vh;
     padding-bottom: 20vh;
-    background-color: #C643FB;
+    background-color: var(--background-color);
 }
 
 .projects{
     padding-top: 20vh;
     padding-bottom: 20vh;
-    background-color: #FA78B2;
+    background-color: var(--red);
 }
 
 .skills{
     padding-top: 20vh;
     padding-bottom: 20vh;
-    background-color: #FFB650;
+    background-color: var(--yellow);
 }
 
 .gotopbutton{
     opacity: 0;
     pointer-events: none;
     position: fixed;
-    /*width: 60px;*/
-    /*height: 60px;*/
-    /*background: #2FE2DD;*/
     bottom: 40px;
     right: 50px;
-    /*border-radius: 30px;*/
 
     text-decoration: none;
     text-align: center;
     line-height: 60px;
     font-size: 60px;
-    color: white;
+    color: var(--text-color) ;
     transition: all .2s;
 }
 
 .gotopbutton:focus{
-    color: white !important;
+    color: var(--text-color) !important;
 }
 
 .gotopbutton:hover{
     transform: translateY(-10px) !important;
-    color: white !important;
+    color: var(--text-color)  !important;
+}
+
+.nicetomeetyou h2{
+    font-family: Poppins, sans-serif;
+    color: var(--text-color);
+    font-size: 70px;
+}
+
+.story-title-outline{
+    color: var(--background-color);
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: var(--text-color);
+    opacity: .2;
+}
+
+.story-title-filled{
+    margin: 10px 0;
+}
+
+.story-description{
+    font-family: Montserrat-Regular, sans-serif;
+    color: var(--text-color);
+    margin: 25px 38px;
+    padding-top: 20px;
 }
