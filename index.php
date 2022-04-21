@@ -5,7 +5,8 @@
     <meta name="viewport"
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+          integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
     <link rel="stylesheet" href="css/index.css">
     <link rel="icon" href="">
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css">
@@ -14,17 +15,17 @@
 </head>
 <body>
 
-    <ul class="topnav">
-        <li><a href="">Projects</a></li>
-        <li><a href="">About</a></li>
-        <li><a href="">Contact</a></li>
-    </ul>
+<ul class="topnav">
+    <li><a href="">Projects</a></li>
+    <li><a href="">About</a></li>
+    <li><a href="">Contact</a></li>
+</ul>
 
 <div class="home-header" id="home-header">
     <div class="container">
         <div class="row">
             <div class="col-sm-12 naam" data-aos="fade-up" data-aos-duration="1000">
-                    <p>Mette Ghijsen</p>
+                <p>Mette Ghijsen</p>
             </div>
             <div class="col-sm-12">
                 <div class="tekst" data-aos="fade-right" data-aos-duration="1000">
@@ -48,16 +49,42 @@
 <div class="nicetomeetyou" id="nicetomeetyou">
     <div class="container">
         <div class="row">
+            <div class="col-sm-8" data-aos="fade-up" data-aos-duration="1000">
+                <div class="story-title-outline">
+                    <h2>&zwnj; &zwnj; nice to meet you! &zwnj; &zwnj;</h2>
+                </div>
+                <div class="story-title-filled">
+                    <h2>&zwnj; &zwnj; nice to meet you! &zwnj; &zwnj;</h2>
+                </div>
+                <div class="story-title-outline">
+                    <h2>&zwnj; &zwnj; nice to meet you! &zwnj; &zwnj;</h2>
+                </div>
+            </div>
 
+            <div class="story-description">
+                <div class="col-sm-6" data-aos="fade-up" data-aos-duration="1000">
+                <p>
+                    My name is Mette. I am 18 years old and I am a junior web developer.
+                    <br>
+                    Welcome to my portfolio website!
+                    <br><br>
+                    I am currently studying IT & Media Design at
+                    Fontys University of Applied Sciences in Eindhoven 🇳🇱.
+                    I am learning new things every day, so I am constantly improving my skills.
+                    Feel free to have a look around.
+                </p>
+                </div>
+            </div>
         </div>
-
     </div>
 </div>
 
 <div class="projects">
     <div class="container">
         <div class="row">
+            <div class="col-sm-12">
 
+            </div>
         </div>
 
     </div>

@@ -20,7 +20,7 @@ html, body {
 }
 
 ::selection {
-    background: var(--red);
+    background: var(--green);
 }
 
 @font-face {
@@ -68,8 +68,8 @@ ul.topnav li a:hover {
 
 .home-header{
     background-color: var(--background-color);
-    padding-top: 18vh;
-    padding-bottom: 18vh;
+    padding-top: 8vh;
+    padding-bottom: 8vh;
 }
 
 .naam{
@@ -79,12 +79,13 @@ ul.topnav li a:hover {
     justify-content: center;
     cursor: default;
     transition: 0.5s !important;
+    margin-top: 6%;
 }
 
 .naam:hover{
-    color: var(--background-color); /* zet hover kleur op zwart */
-    text-decoration: none; /* alle standaard <a> text-decorations er af halen */
-    text-shadow: 0 -1px 0 #FFF, /* een scherpe text-shadow in elke richting op sturen wat 2 pixels groot is voor de rand */
+    color: var(--background-color);
+    text-decoration: none;
+    text-shadow: 0 -1px 0 #FFF,
     1px -1px 0 #FFFFFF,
     1px 0 0 #FFFFFF,
     1px 1px 0 #FFFFFF,
@@ -151,19 +152,19 @@ ul.topnav li a:hover {
     text-align: center;
     line-height: 60px;
     font-size: 60px;
-    color: white;
+    color: var(--text-color) ;
     transition: all .2s;
 }
 
 .scrolldown:hover{
     transform: translateY(10px) !important;
-    color: white !important;
+    color: var(--text-color)  !important;
 }
 
 .nicetomeetyou{
     padding-top: 20vh;
     padding-bottom: 20vh;
-    background-color: var(--blue);
+    background-color: var(--background-color);
 }
 
 .projects{
@@ -189,15 +190,39 @@ ul.topnav li a:hover {
     text-align: center;
     line-height: 60px;
     font-size: 60px;
-    color: white;
+    color: var(--text-color) ;
     transition: all .2s;
 }
 
 .gotopbutton:focus{
-    color: white !important;
+    color: var(--text-color) !important;
 }
 
 .gotopbutton:hover{
     transform: translateY(-10px) !important;
-    color: white !important;
+    color: var(--text-color)  !important;
+}
+
+.nicetomeetyou h2{
+    font-family: Poppins, sans-serif;
+    color: var(--text-color);
+    font-size: 70px;
+}
+
+.story-title-outline{
+    color: var(--background-color);
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: var(--text-color);
+    opacity: .2;
+}
+
+.story-title-filled{
+    margin: 10px 0;
+}
+
+.story-description{
+    font-family: Montserrat-Regular, sans-serif;
+    color: var(--text-color);
+    margin: 25px 38px;
+    padding-top: 20px;
 }
