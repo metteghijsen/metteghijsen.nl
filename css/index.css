@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,500;1,400&display=swap');
+
 :root{
     --background-color: black;
     --blue: #4369FB;
@@ -12,6 +14,7 @@ html, body {
     min-height: 100%;
     margin: 0;
     scroll-behavior: smooth;
+    background-color: var(--background-color);
 }
 
 /* width */
@@ -43,37 +46,68 @@ html, body {
     src: url("../fonts/Montserrat-Bold.woff") format("woff");
 }
 
-.topnav{
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100vw;
-    transform: translateY(-2.1vh);
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.header{
+    background-color: var(--background-color);
+}
+
+.navbar {
     display: flex;
-    list-style-type: none;
-    padding: 10px;
-    overflow: hidden;
-    justify-content: flex-end;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 2.5rem 1rem 2.5rem;
 }
 
-ul.topnav li a {
+.hamburger {
+    display: none;
+}
+
+.bar {
     display: block;
-    color: var(--text-color);
-    text-align: center;
+    width: 25px;
+    height: 3px;
+    margin: 5px auto;
+    -webkit-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+    background-color: var(--text-color);
+}
+
+.nav-menu {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    list-style-type: none;
+}
+
+.nav-item {
+    margin-left: 5rem;
+}
+
+.nav-link{
     font-family: Poppins-Regular, sans-serif;
-    padding: 30px 35px;
-    text-decoration: none;
+    font-size: 16px;
+    color: var(--text-color);
     transition: ease .5s;
 }
 
-ul.topnav li a:hover {
+.nav-link:hover{
     opacity: .5;
+    color: var(--text-color);
     transition: ease .5s;
+}
+
+.nav-logo {
+    width: 5%;
 }
 
 .home-header{
     background-color: var(--background-color);
-    padding-top: 6vh;
     padding-bottom: 6vh;
 }
 
@@ -84,7 +118,7 @@ ul.topnav li a:hover {
     justify-content: center;
     cursor: default;
     transition: 0.5s !important;
-    margin-top: 11%;
+    margin-top: 7%;
 }
 
 .name:hover{
@@ -216,9 +250,10 @@ ul.topnav li a:hover {
 .story-description{
     font-family: Montserrat-Regular, sans-serif;
     color: var(--text-color);
-    margin: 25px 38px;
+    margin: 25px 0;
     padding-top: 20px;
     opacity: .8;
+    font-size: 16px;
 }
 
 .partners{
@@ -230,8 +265,7 @@ ul.topnav li a:hover {
     font-family: Poppins-Bold, sans-serif;
     color: var(--text-color);
     font-size: 70px;
-    white-space: nowrap;
-    margin: 0 0 30px 38px;
+    margin: 0 0 30px 0;
     line-height: 100px;
     display: flex;
     justify-content: center;
@@ -261,7 +295,6 @@ ul.topnav li a:hover {
     color: var(--text-color);
     font-size: 70px;
     white-space: nowrap;
-    margin: 0 0 0 38px;
     line-height: 100px;
 }
 
@@ -279,7 +312,7 @@ ul.topnav li a:hover {
 }
 
 .contact-description{
-    margin: 25px 38px;
+    margin: 25px 0;
 }
 
 .contact-description a{
@@ -296,5 +329,76 @@ ul.topnav li a:hover {
     color: var(--text-color);
     font-size: 15px;
     opacity: 1;
-    margin: 60px 0 0 38px;
+    margin: 60px 0 0 0;
+}
+
+.nodisplay{
+    display: none;
+}
+
+@media only screen and (max-width: 768px) {
+    .nav-menu {
+        position: fixed;
+        left: -100%;
+        top: 6rem;
+        flex-direction: column;
+        background-color: var(--background-color);
+        width: 100%;
+        border-radius: 10px;
+        text-align: center;
+        transition: 0.3s;
+        box-shadow:
+                0 10px 27px rgba(0, 0, 0, 0.05);
+    }
+
+    .nav-menu.active {
+        left: 0;
+    }
+
+    .nav-item {
+        margin: 2.5rem 0;
+    }
+
+    .nav-logo {
+        width: 15%;
+    }
+
+    .hamburger {
+        display: block;
+        cursor: pointer;
+    }
+
+    .hamburger.active .bar:nth-child(2) {
+        opacity: 0;
+    }
+
+    .hamburger.active .bar:nth-child(1) {
+        transform: translateY(8px) rotate(45deg);
+    }
+
+    .hamburger.active .bar:nth-child(3) {
+        transform: translateY(-8px) rotate(-45deg);
+    }
+
+    .name{
+        font-size: 80px;
+    }
+    .nicetomeetyou h2{
+        font-size: 40px;
+    }
+    .partners h2{
+        font-size: 40px;
+        line-height: 40px;
+    }
+    .partner-logos svg{
+        width: 30%;
+        height: auto;
+        display: flex;
+        opacity: .8;
+        margin: 30px;
+    }
+    .contact h2{
+        font-size: 40px;
+        line-height: 40px;
+    }
 }
