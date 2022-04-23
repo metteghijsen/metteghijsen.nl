@@ -72,13 +72,13 @@
         <div class="container">
             <div class="row">
                 <div class="col-sm-12" data-aos="fade-up" data-aos-duration="1000">
-                    <div class="story-title-outline">
+                    <div class="story-title-outline radial">
                         <h2>nice to meet you!</h2>
                     </div>
                     <div class="story-title-filled">
                         <h2>nice to meet you! </h2>
                     </div>
-                    <div class="story-title-outline">
+                    <div class="story-title-outline radial">
                         <h2>nice to meet you!</h2>
                     </div>
                 </div>
