@@ -27,6 +27,11 @@ html, body {
 }
 
 @font-face {
+    font-family: "Nano";
+    src: url("../fonts/nano.woff") format("woff");
+}
+
+@font-face {
     font-family: "Poppins-Regular";
     src: url("../fonts/Poppins-Regular.woff") format("woff");
 }
@@ -227,7 +232,7 @@ html, body {
 
 .nicetomeetyou{
     padding-top: 15vh;
-    padding-bottom: 20vh;
+    padding-bottom: 13vh;
     background-color: var(--background-color);
 }
 
@@ -256,6 +261,42 @@ html, body {
     font-size: 16px;
 }
 
+.skills{
+    padding-bottom: 25vh;
+    background-color: var(--background-color);
+}
+
+.skills h2{
+    font-family: Poppins-Bold, sans-serif;
+    color: var(--text-color);
+    font-size: 70px;
+    margin: 0;
+    line-height: 100px;
+    display: flex;
+    justify-content: center;
+}
+
+.skills-logos{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.skills-logos img{
+    width: 10%;
+    height: auto;
+    display: flex;
+    opacity: .8;
+    margin: 5px 30px;
+    filter: grayscale(100%);
+    transition: ease .5s;
+}
+
+.skills-logos img:hover{
+    filter: grayscale(0);
+    transition: ease .5s;
+}
+
 .partners{
     padding-bottom: 25vh;
     background-color: var(--background-color);
@@ -277,12 +318,18 @@ html, body {
     align-items: center;
 }
 
-.partner-logos svg{
-    width: 15%;
+.partner-logos a img{
+    width: 80%;
     height: auto;
     display: flex;
-    opacity: .8;
-    margin: 30px;
+    margin: 0;
+    filter: grayscale(100%);
+    transition: ease .5s;
+}
+
+.partner-logos img:hover{
+    filter: grayscale(0);
+    transition: ease .5s;
 }
 
 .contact{
@@ -385,6 +432,17 @@ html, body {
     }
     .nicetomeetyou h2{
         font-size: 40px;
+    }
+    .skills h2{
+        font-size: 40px;
+        line-height: 40px;
+    }
+    .skills-logos svg{
+        width: 30%;
+        height: auto;
+        display: flex;
+        opacity: .8;
+        margin: 30px;
     }
     .partners h2{
         font-size: 40px;
