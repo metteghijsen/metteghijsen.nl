@@ -46,11 +46,11 @@
     <div class="home-header" id="home-header">
         <div class="container">
             <div class="row">
-                <div class="col-sm-12 name" data-aos="fade-up" data-aos-duration="1000">
+                <div class="col-sm-12 name" data-aos="zoom-in" data-aos-duration="1000">
                     <p>Mette Ghijsen</p>
                 </div>
                 <div class="col-sm-12">
-                    <div class="name-description" data-aos="fade-right" data-aos-duration="1000">
+                    <div class="name-description" data-aos="zoom-in" data-aos-duration="1000">
                         <p>An 18 year old junior web developer.<br>
                             Want to learn more about me? </p>
                     </div>
@@ -101,25 +101,6 @@
         </div>
     </div>
 
-    <div class="cases">
-        <div class="container">
-            <div class="row">
-                <div class="col-sm-12">
-                    <!--                <div class="cases-row-1">-->
-                    <!--                    <img src="" alt="cases">-->
-                    <!--                </div>-->
-                    <!--                <div class="cases-row-2">-->
-                    <!--                    <img src="" alt="cases">-->
-                    <!--                </div>-->
-                    <!--                <div class="cases-row-3">-->
-                    <!--                    <img src="" alt="cases">-->
-                    <!--                </div>-->
-                </div>
-            </div>
-
-        </div>
-    </div>
-
     <div class="skills">
         <div class="container">
             <div class="row">
@@ -134,6 +115,26 @@
                     </div>
                 </div>
             </div>
+        </div>
+    </div>
+
+    <div class="cases" data-aos="zoom-in" data-aos-duration="500">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-12">
+                    <img src="img/cases3.svg" alt="Cases" class="cases-header">
+                    <!--                <div class="cases-row-1">-->
+                    <!--                    <img src="" alt="cases">-->
+                    <!--                </div>-->
+                    <!--                <div class="cases-row-2">-->
+                    <!--                    <img src="" alt="cases">-->
+                    <!--                </div>-->
+                    <!--                <div class="cases-row-3">-->
+                    <!--                    <img src="" alt="cases">-->
+                    <!--                </div>-->
+                </div>
+            </div>
+
         </div>
     </div>
 

@@ -109,6 +109,7 @@ html, body {
 
 .nav-logo {
     width: 5%;
+    z-index: 5;
 }
 
 .home-header{
@@ -273,7 +274,7 @@ html, body {
 }
 
 .skills{
-    padding-bottom: 25vh;
+    padding: 25vh 0;
     background-color: var(--background-color);
 }
 
@@ -309,8 +310,25 @@ html, body {
     transition: ease .5s;
 }
 
+.cases{
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    vertical-align: baseline;
+}
+
+.cases-header{
+    width: 100%;
+    background-position: center;
+    background-repeat: repeat-x;
+    transform: scale(2.5);
+    margin: 5vh 0;
+    background-color: var(--background-color);
+}
+
 .partners{
-    padding-bottom: 25vh;
+    margin: 25vh 0;
     background-color: var(--background-color);
 }
 
