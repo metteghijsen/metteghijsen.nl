@@ -323,12 +323,122 @@ html, body {
     background-position: center;
     background-repeat: repeat-x;
     transform: scale(2.5);
-    margin: 5vh 0;
+    margin: 5vh 0 25vh 0;
     background-color: var(--background-color);
 }
 
+.conteener{
+    position: relative;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+}
+
+.conteener .parallax{
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+
+.conteener .parallax:nth-child(1){
+    background-color: var(--red);
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.conteener .parallax:nth-child(2){
+    background-color: var(--yellow);
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.conteener .parallax:nth-child(3){
+    background-color: var(--green);
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.conteener .parallax:nth-child(4){
+    background-color: var(--blue);
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+/*.case-div{*/
+/*    height: 100vh;*/
+/*    width: 100%;*/
+/*    display: flex;*/
+/*    justify-content: center;*/
+/*    align-items: center;*/
+/*}*/
+
+/*.case-div:nth-child(2){*/
+/*        background-color: var(--red);*/
+/*        background-size: cover;*/
+/*        background-attachment: fixed;*/
+/*}*/
+
+/*.case-div:nth-child(3){*/
+/*    background-color: var(--yellow);*/
+/*    background-size: cover;*/
+/*    background-attachment: fixed;*/
+/*}*/
+
+/*.case-div:nth-child(4){*/
+/*    background-color: var(--green);*/
+/*    background-size: cover;*/
+/*    background-attachment: fixed;*/
+/*}*/
+
+/*.case-div:nth-child(5){*/
+/*    background-color: var(--blue);*/
+/*    background-size: cover;*/
+/*    background-attachment: fixed;*/
+/*}*/
+
+/*.case-1{*/
+/*    background-color: var(--red);*/
+/*    background-size: cover;*/
+/*    background-attachment: fixed;*/
+/*}*/
+
+/*.case-2{*/
+/*    background-color: var(--yellow);*/
+/*    background-size: cover;*/
+/*    background-attachment: fixed;*/
+/*}*/
+
+/*.case-3{*/
+/*    background-color: var(--green);*/
+/*    background-size: cover;*/
+/*    background-attachment: fixed;*/
+/*}*/
+
+/*.case-4{*/
+/*    background-color: var(--blue);*/
+/*    background-size: cover;*/
+/*    background-attachment: fixed;*/
+/*}*/
+
+
+
+.case-title h2{
+    font-family: Poppins-Bold, sans-serif;
+    font-size: 70px;
+    white-space: nowrap;
+    color: var(--text-color);
+}
+
+.img-wrapper{
+    overflow: hidden;
+}
+
+.img-wrapper img{
+    min-height: 210px;
+}
+
 .partners{
-    margin: 5vh 0 30vh 0;
+    margin: 30vh 0 30vh 0;
     background-color: var(--background-color);
 }
 
@@ -354,12 +464,14 @@ html, body {
     height: auto;
     display: flex;
     margin: 0;
-    filter: grayscale(100%);
+    opacity: .5;
+    /*filter: grayscale(100%);*/
     transition: ease .5s;
 }
 
 .partner-logos img:hover{
-    filter: grayscale(0);
+    opacity: 1;
+    /*filter: grayscale(0);*/
     transition: ease .5s;
 }
 
