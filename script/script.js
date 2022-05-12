@@ -55,6 +55,7 @@ determine_scroll()
 
 let copyrightEle = document.getElementById("copyright");
 let heroDescription = document.getElementById("description");
+let profileDescription = document.getElementById("description2");
 
 let current = new Date();
 let birthday = new Date("05/02/2003");
@@ -67,4 +68,12 @@ const calculateAge = () => {
 }
 
 heroDescription.innerHTML = "An " + calculateAge() + " year old junior web developer.<br>\n" + "Want to learn more about me?"
+profileDescription.innerHTML = "  My name is Mette. I am " + calculateAge() + " years old and I am a junior web developer.\n" +
+    "                                <br>\n" +
+    "                                Welcome to my portfolio website!\n" +
+    "                                <br><br>\n" +
+    "                                I am currently studying IT & Media Design at\n" +
+    "                                Fontys University of Applied Sciences in Eindhoven 🇳🇱.\n" +
+    "                                I am learning new things every day, so I am constantly improving my skills.\n" +
+    "                                Feel free to have a look around."
 copyrightEle.innerHTML = "Mette Ghijsen © " + currentYear + " - Update 1.0";

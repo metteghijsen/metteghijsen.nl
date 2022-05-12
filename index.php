@@ -119,7 +119,7 @@
                 <div class="story-description">
                     <div class="row">
                         <div class="col-md-6" data-aos="fade-up" data-aos-duration="1000">
-                            <p>
+                            <p id="description2">
                                 My name is Mette. I am 18 years old and I am a junior web developer.
                                 <br>
                                 Welcome to my portfolio website!
