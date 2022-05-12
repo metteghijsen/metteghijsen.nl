@@ -15,15 +15,12 @@ html, body {
     margin: 0;
     scroll-behavior: smooth;
     background-color: var(--background-color);
+    user-select: none;
 }
 
 /* width */
 ::-webkit-scrollbar {
     display: none;
-}
-
-::selection {
-    background: var(--green);
 }
 
 @font-face {
@@ -273,36 +270,23 @@ html, body {
     cursor: default;
 }
 
-.skills{
-    padding: 25vh 0;
-    background-color: var(--background-color);
-}
-
-.skills h2{
-    font-family: Poppins-Bold, sans-serif;
-    color: var(--text-color);
-    font-size: 70px;
-    margin: 0;
-    line-height: 100px;
-    display: flex;
-    justify-content: center;
-    cursor: default;
-}
-
 .skills-logos{
     display: flex;
+    flex-direction: column;
+}
+
+.skills-logos>div{
+    display: flex;
     justify-content: center;
-    align-items: center;
 }
 
 .skills-logos img{
     width: 10%;
     height: auto;
-    display: flex;
     opacity: .8;
-    margin: 5px 30px;
     filter: grayscale(100%);
     transition: ease .5s;
+    margin: 10px;
 }
 
 .skills-logos img:hover{
@@ -327,106 +311,53 @@ html, body {
     background-color: var(--background-color);
 }
 
-.conteener{
-    position: relative;
-    width: 100%;
-    height: 100%;
-    overflow: auto;
+.cases>section{
+    height: 100vh;
 }
 
-.conteener .parallax{
-    position: relative;
+.cases>section>div{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    position: fixed;
+    left: 0;
+    top: 0;
+    z-index: 1;
     width: 100%;
-    height: 100%;
+    clip: rect(0 , auto, auto, 0);
 }
 
-.conteener .parallax:nth-child(1){
+.cases>section:nth-child(2)>div{
     background-color: var(--red);
-    background-size: cover;
-    background-attachment: fixed;
 }
 
-.conteener .parallax:nth-child(2){
+.cases>section:nth-child(3)>div{
     background-color: var(--yellow);
-    background-size: cover;
-    background-attachment: fixed;
 }
 
-.conteener .parallax:nth-child(3){
+.cases>section:nth-child(4)>div{
     background-color: var(--green);
-    background-size: cover;
-    background-attachment: fixed;
 }
 
-.conteener .parallax:nth-child(4){
+.cases>section:nth-child(5)>div{
     background-color: var(--blue);
-    background-size: cover;
-    background-attachment: fixed;
 }
 
-/*.case-div{*/
-/*    height: 100vh;*/
-/*    width: 100%;*/
-/*    display: flex;*/
-/*    justify-content: center;*/
-/*    align-items: center;*/
-/*}*/
-
-/*.case-div:nth-child(2){*/
-/*        background-color: var(--red);*/
-/*        background-size: cover;*/
-/*        background-attachment: fixed;*/
-/*}*/
-
-/*.case-div:nth-child(3){*/
-/*    background-color: var(--yellow);*/
-/*    background-size: cover;*/
-/*    background-attachment: fixed;*/
-/*}*/
-
-/*.case-div:nth-child(4){*/
-/*    background-color: var(--green);*/
-/*    background-size: cover;*/
-/*    background-attachment: fixed;*/
-/*}*/
-
-/*.case-div:nth-child(5){*/
-/*    background-color: var(--blue);*/
-/*    background-size: cover;*/
-/*    background-attachment: fixed;*/
-/*}*/
-
-/*.case-1{*/
-/*    background-color: var(--red);*/
-/*    background-size: cover;*/
-/*    background-attachment: fixed;*/
-/*}*/
-
-/*.case-2{*/
-/*    background-color: var(--yellow);*/
-/*    background-size: cover;*/
-/*    background-attachment: fixed;*/
-/*}*/
-
-/*.case-3{*/
-/*    background-color: var(--green);*/
-/*    background-size: cover;*/
-/*    background-attachment: fixed;*/
-/*}*/
-
-/*.case-4{*/
-/*    background-color: var(--blue);*/
-/*    background-size: cover;*/
-/*    background-attachment: fixed;*/
-/*}*/
-
-
-
-.case-title h2{
+.cases>section>div>h2{
     font-family: Poppins-Bold, sans-serif;
     font-size: 70px;
     white-space: nowrap;
     color: var(--text-color);
+}
+
+.cases>section>div>a{
+    font-family: "Montserrat-Regular", sans-serif;
+    color: white;
+    font-size: 22px;
+    text-align: center;
+    text-decoration: none;
 }
 
 .img-wrapper{

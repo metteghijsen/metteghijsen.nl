@@ -60,7 +60,7 @@
                 <a href="#nicetomeetyou" class="nav-link">About</a>
             </li>
             <li class="nav-item">
-                <a href="#" class="nav-link">Cases</a>
+                <a href="#cases" class="nav-link">Cases</a>
             </li>
             <li class="nav-item">
                 <a href="#contact" class="nav-link">Contact</a>
@@ -118,102 +118,61 @@
                 </div>
 
                 <div class="story-description">
-                    <div class="col-sm-6" data-aos="fade-up" data-aos-duration="1000">
-                        <p>
-                            My name is Mette. I am 18 years old and I am a junior web developer.
-                            <br>
-                            Welcome to my portfolio website!
-                            <br><br>
-                            I am currently studying IT & Media Design at
-                            Fontys University of Applied Sciences in Eindhoven 🇳🇱.
-                            I am learning new things every day, so I am constantly improving my skills.
-                            Feel free to have a look around.
-                        </p>
+                    <div class="row">
+                        <div class="col-md-6" data-aos="fade-up" data-aos-duration="1000">
+                            <p>
+                                My name is Mette. I am 18 years old and I am a junior web developer.
+                                <br>
+                                Welcome to my portfolio website!
+                                <br><br>
+                                I am currently studying IT & Media Design at
+                                Fontys University of Applied Sciences in Eindhoven 🇳🇱.
+                                I am learning new things every day, so I am constantly improving my skills.
+                                Feel free to have a look around.
+                            </p>
+                        </div>
+<!--                        <div class="col-md-6" data-aos="fade-up" data-aos-duration="1000">-->
+<!--                            <div class="skills-logos">-->
+<!--                                <div class="row">-->
+<!--                                    <img src="img/html.svg" alt="Skilled in HTML5" class="col-md-6">-->
+<!--                                    <img src="img/css.svg" alt="Skilled in CSS3" class="col-md-6">-->
+<!--                                </div>-->
+<!--                                <div class="row">-->
+<!--                                    <img src="img/javascript.svg" alt="Skilled in Javascript" class="col-md-6">-->
+<!--                                    <img src="img/vue.svg" alt="Skilled in Vue" class="col-md-6">-->
+<!--                                </div>-->
+<!--                            </div>-->
+<!--                        </div>-->
                     </div>
                 </div>
             </div>
         </div>
     </div>
 
-    <!--    Skills-->
-    <!--    <div class="skills">-->
-    <!--        <div class="container">-->
-    <!--            <div class="row">-->
-    <!--                <div class="col-sm-12">-->
-    <!--                    <div class="skills-title" data-aos="fade-up" data-aos-duration="1000">-->
-    <!--                        <h2>skills</h2>-->
-    <!--                    </div>-->
-    <!--                    <div class="skills-logos" data-aos="fade-up" data-aos-duration="1000">-->
-    <!--                        <img src="img/html.svg" alt="Skilled in HTML5">-->
-    <!--                        <img src="img/css.svg" alt="Skilled in CSS3">-->
-    <!--                        <img src="img/javascript.svg" alt="Skilled in Javascript">-->
-    <!--                    </div>-->
-    <!--                </div>-->
-    <!--            </div>-->
-    <!--        </div>-->
-    <!--    </div>-->
-
     <!--    Cases-->
-    <div class="cases">
+    <div class="cases" id="cases">
         <div class="img-wrapper" data-aos="zoom-in" data-aos-duration="500">
             <img src="img/cases3.svg" alt="Cases" class="cases-header">
         </div>
-
-        <!--        <div class="case-div">-->
-        <!--            <div class="case-title">-->
-        <!--                <h2>case 1</h2>-->
-        <!--            </div>-->
-        <!--        </div>-->
-        <!---->
-        <!--        <div class="case-div">-->
-        <!--            <div class="case-title">-->
-        <!--            <h2>case 2</h2>-->
-        <!--            </div>-->
-        <!--        </div>-->
-        <!---->
-        <!--        <div class="case-div">-->
-        <!--            <div class="case-title">-->
-        <!--            <h2>case 3</h2>-->
-        <!--            </div>-->
-        <!--        </div>-->
-        <!---->
-        <!--        <div class="case-div">-->
-        <!--            <div class="case-title">-->
-        <!--            <h2>case 4</h2>-->
-        <!--            </div>-->
-        <!--        </div>-->
-
-        <div class="conteener">
-            <div class="parallax">
-                <div class="parallax-content">
-                    <h2>kinker</h2>
-                    <p>konker</p>
-                </div>
+        <section>
+            <div>
+                <h2>Printpal</h2>
+                <a href="">Open case →</a>
             </div>
-
-            <div class="parallax">
-                <div class="parallax-content">
-                    <h2>kinker</h2>
-                    <p>konker</p>
-                </div>
+        </section>
+        <section>
+            <div>
+                <h2>NORE</h2>
+                <a href="">Open case →</a>
             </div>
-
-            <div class="parallax">
-                <div class="parallax-content">
-                    <h2>kinker</h2>
-                    <p>konker</p>
-                </div>
+        </section>
+        <section>
+            <div>
+                <h2>YourWorld</h2>
+                <a href="">Open case →</a>
             </div>
-
-            <div class="parallax">
-                <div class="parallax-content">
-                    <h2>kinker</h2>
-                    <p>konker</p>
-                </div>
-            </div>
-        </div>
+        </section>
     </div>
-
 
     <!--    Partners-->
     <div class="partners">
@@ -275,8 +234,7 @@
 <script>
     AOS.init();
 </script>
-<script src="script/scrolltotop.js"></script>
-<script src="script/hamburger.js"></script>
+<script src="script/script.js"></script>
 </body>
 </html>
 
