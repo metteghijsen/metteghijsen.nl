@@ -28,8 +28,7 @@ window.addEventListener("scroll", () => {
         toTopEle.style.transform = "scale(1)";
         toTopEle.style.opacity = "1";
         toTopEle.style.pointerEvents = "all";
-    }
-    else if (window.pageYOffset < 400) {
+    } else if (window.pageYOffset < 400) {
         toTopEle.style.transform = "scale(0)";
         toTopEle.style.opacity = "0";
         toTopEle.style.pointerEvents = "none";
@@ -37,17 +36,35 @@ window.addEventListener("scroll", () => {
 })
 
 //Parallax Scroll
-const determine_scroll=()=>{
+const determine_scroll = () => {
     const scrollafstand = window.scrollY;
     const hoogte_pagina = document.querySelector("section").clientHeight;
     const hoogte = document.querySelector("section:nth-of-type(1)").offsetTop;
-    document.querySelectorAll("section>div").forEach((pagina,index)=>{
-        const start_rect_clip =(((index*hoogte_pagina) -scrollafstand)+hoogte)+"px";
-        const end_rect_clip = (((index+1)*hoogte_pagina) - scrollafstand+hoogte)+"px";
-        pagina.style.setProperty("clip","rect("+start_rect_clip+",auto,"+end_rect_clip+",0)")
+    document.querySelectorAll("section>div").forEach((pagina, index) => {
+        const start_rect_clip = (((index * hoogte_pagina) - scrollafstand) + hoogte) + "px";
+        const end_rect_clip = (((index + 1) * hoogte_pagina) - scrollafstand + hoogte) + "px";
+        pagina.style.setProperty("clip", "rect(" + start_rect_clip + ",auto," + end_rect_clip + ",0)")
     })
 }
 
-document.addEventListener("scroll",determine_scroll)
-window.addEventListener("resize",determine_scroll)
+document.addEventListener("scroll", determine_scroll)
+window.addEventListener("resize", determine_scroll)
 determine_scroll()
+
+//Leeftijd en Copyrightjaar automatisch updaten
+
+let copyrightEle = document.getElementById("copyright");
+let heroDescription = document.getElementById("description");
+
+let current = new Date();
+let birthday = new Date("05/02/2003");
+currentYear = current.getFullYear();
+
+const calculateAge = () => {
+    const ageDifMs = Date.now() - new Date(birthday).getTime();
+    const ageDate = new Date(ageDifMs);
+    return Math.abs(ageDate.getUTCFullYear() - 1970);
+}
+
+heroDescription.innerHTML = "An " + calculateAge() + " year old junior web developer.<br>\n" + "Want to learn more about me?"
+copyrightEle.innerHTML = "Mette Ghijsen © " + currentYear + " - Update 1.0";

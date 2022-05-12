@@ -8,7 +8,7 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
           integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
     <link rel="stylesheet" href="css/index.css">
-    <link rel="icon" href="">
+    <link rel="icon" href="img/mglogo.svg">
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css">
     <title>Mette Ghijsen</title>
@@ -84,8 +84,7 @@
                 </div>
                 <div class="col-sm-12">
                     <div class="name-description" data-aos="zoom-in" data-aos-duration="1000">
-                        <p>An 18 year old junior web developer.<br>
-                            Want to learn more about me? </p>
+                        <p id="description"></p>
                     </div>
                 </div>
                 <div class="col-sm-12 shapes">
@@ -156,19 +155,19 @@
         </div>
         <section>
             <div>
-                <h2>Printpal</h2>
+                <h2>printpal</h2>
                 <a href="">Open case →</a>
             </div>
         </section>
         <section>
             <div>
-                <h2>NORE</h2>
+                <h2>nore</h2>
                 <a href="">Open case →</a>
             </div>
         </section>
         <section>
             <div>
-                <h2>YourWorld</h2>
+                <h2>yourworld</h2>
                 <a href="">Open case →</a>
             </div>
         </section>
@@ -184,8 +183,8 @@
                     </div>
                     <div class="partner-logos" data-aos="fade-up" data-aos-duration="1000">
                         <a href="https://fontys.nl/Studeren/Vind-een-passende-opleiding/HBO-ICT.htm"
-                           target="_blank"><img src="img/fontys.svg" alt="Fontys"></a>
-                        <a href="https://www.sogeti.nl/" target="_blank"><img src="img/sogeti.svg" alt="Sogeti"></a>
+                           target="_blank"><img src="img/fontys.svg" alt="Fontys" class="fontys"></a>
+                        <a href="https://www.sogeti.nl/" target="_blank"><img src="img/sogeti.svg" alt="Sogeti" class="sogeti"></a>
                     </div>
                 </div>
             </div>
@@ -220,7 +219,7 @@
                         </p>
                     </div>
                     <div class="copyright">
-                        <p>Mette Ghijsen © 2022 - Update 1.0</p>
+                        <p id="copyright"></p>
                     </div>
                 </div>
             </div>
