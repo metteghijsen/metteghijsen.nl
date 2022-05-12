@@ -154,20 +154,20 @@
             <img src="img/cases3.svg" alt="Cases" class="cases-header">
         </div>
         <section>
-            <div>
+            <div class="case-printpal bg">
                 <h2>printpal</h2>
                 <a href="">Open case →</a>
             </div>
         </section>
         <section>
-            <div>
-                <h2>nore</h2>
+            <div class="case-yourworld bg">
+                <h2>yourworld</h2>
                 <a href="">Open case →</a>
             </div>
         </section>
         <section>
-            <div>
-                <h2>yourworld</h2>
+            <div class="case-nore bg">
+                <h2>nore</h2>
                 <a href="">Open case →</a>
             </div>
         </section>
