@@ -49,6 +49,15 @@ html, body {
 }
 
 
+@keyframes movingShapes {
+    from    { transform:rotateY(50deg); }
+    20%     { transform:rotateY(30deg); }
+    40%     { transform:rotateY(70deg); }
+    60%     { transform:rotateY(35deg); }
+    80%     { transform:rotateY(60deg); }
+    to      { transform:rotateY(50deg); }
+}
+
 * {
     margin: 0;
     padding: 0;
@@ -270,6 +279,78 @@ html, body {
     cursor: default;
 }
 
+.moving-shapes{
+    display: grid;
+    grid-template-columns: repeat(2,2fr);
+}
+
+div a>div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 30px;
+}
+
+div a>div svg:nth-of-type(2){
+    position: absolute;
+    fill: url(#gradient);
+    filter: drop-shadow(5px 5px 20px rgba(0,0,0,.25));
+    transform: rotateY(50deg);
+    transform-origin: right center;
+    animation: 5s ease-in-out 0s infinite alternate both running movingShapes;
+}
+
+div a.openklappen>div svg:nth-of-type(2){
+    transition: all ease-in-out 200ms;
+    transform: rotateY(180deg);
+    animation: none;
+}
+
+div a.dichtklappen>div svg:nth-of-type(2){
+    transition: all ease-in-out 500ms;
+    transform: rotateY(50deg);
+    animation: none;
+}
+
+div a.stilzetten>div svg:nth-of-type(2){
+    transition: all ease-in-out 5ms;
+    transform: rotateY(50deg);
+    animation: none;
+}
+
+a#driehoek>div{
+    transform: rotate(-30deg);
+    transform-origin: 150px 70px;
+}
+a#driehoek svg:nth-of-type(1){
+    fill: var(--blue);
+}
+
+a#kruis>div{
+    transform: rotate(-45deg);
+    transform-origin: center center;
+}
+a#kruis svg:nth-of-type(1){
+    fill: var(--green);
+}
+
+a#donut svg:nth-of-type(1){
+    fill: var(--red);
+}
+
+a#square svg:nth-of-type(1){
+    fill: var(--yellow);
+}
+
+a#diamond svg:nth-of-type(1){
+    fill: var(--green);
+}
+
+a#diamond>div{
+    transform: rotate(-45deg);
+    transform-origin: center center;
+}
+
 .skills-logos{
     display: flex;
     flex-direction: column;
@@ -406,7 +487,7 @@ html, body {
     height: auto;
     display: flex;
     margin: 0;
-    opacity: .3;
+    opacity: .5;
     /*filter: grayscale(100%);*/
     transition: ease .5s;
 }

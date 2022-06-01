@@ -35,6 +35,26 @@ window.addEventListener("scroll", () => {
     }
 })
 
+//Moving shapes
+document.querySelectorAll("div a").forEach((flapje)=>{
+    flapje.addEventListener("mouseenter",()=>{
+        clearTimeout(flapje.timeout)
+        flapje.classList.remove("dichtklappen")
+        flapje.classList.add("stilzetten")
+        setTimeout(()=>{
+            flapje.classList.remove("stilzetten")
+            flapje.classList.add("openklappen")
+        })
+    })
+    flapje.addEventListener("mouseleave",()=>{
+        flapje.classList.remove("openklappen")
+        flapje.classList.add("dichtklappen")
+        flapje.timeout = setTimeout(()=>{
+            flapje.classList.remove("dichtklappen")
+        },500)
+    })
+})
+
 //Parallax Scroll
 const determine_scroll = () => {
     const scrollafstand = window.scrollY;

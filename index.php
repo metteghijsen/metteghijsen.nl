@@ -104,7 +104,7 @@
     <div class="nicetomeetyou" id="nicetomeetyou">
         <div class="container">
             <div class="row">
-                <div class="col-sm-12" data-aos="fade-up" data-aos-duration="1000">
+                <div class="col-sm-6" data-aos="fade-up" data-aos-duration="1000">
                     <div class="story-title-outline radial">
                         <h2>nice to meet you!</h2>
                     </div>
@@ -114,34 +114,99 @@
                     <div class="story-title-outline radial">
                         <h2>nice to meet you!</h2>
                     </div>
+                    <br/>
+                    <div class="story-description">
+                        <p id="description2">
+                            My name is Mette. I am 18 years old and I am a junior web developer.
+                            <br>
+                            Welcome to my portfolio website!
+                            <br><br>
+                            I am currently studying IT & Media Design at
+                            Fontys University of Applied Sciences in Eindhoven 🇳🇱.
+                            I am learning new things every day, so I am constantly improving my skills.
+                            Feel free to have a look around.
+                        </p>
+                    </div>
                 </div>
 
-                <div class="story-description">
-                    <div class="row">
-                        <div class="col-md-6" data-aos="fade-up" data-aos-duration="1000">
-                            <p id="description2">
-                                My name is Mette. I am 18 years old and I am a junior web developer.
-                                <br>
-                                Welcome to my portfolio website!
-                                <br><br>
-                                I am currently studying IT & Media Design at
-                                Fontys University of Applied Sciences in Eindhoven 🇳🇱.
-                                I am learning new things every day, so I am constantly improving my skills.
-                                Feel free to have a look around.
-                            </p>
+
+                <!--                        <div class="col-md-6" data-aos="fade-up" data-aos-duration="1000">-->
+                <!--                            <div class="skills-logos">-->
+                <!--                                <div class="row">-->
+                <!--                                    <img src="img/html.svg" alt="Skilled in HTML5" class="col-md-6">-->
+                <!--                                    <img src="img/css.svg" alt="Skilled in CSS3" class="col-md-6">-->
+                <!--                                </div>-->
+                <!--                                <div class="row">-->
+                <!--                                    <img src="img/javascript.svg" alt="Skilled in Javascript" class="col-md-6">-->
+                <!--                                    <img src="img/vue.svg" alt="Skilled in Vue" class="col-md-6">-->
+                <!--                                </div>-->
+                <!--                            </div>-->
+                <!--                        </div>-->
+
+                <div class="col-md-6" data-aos="fade-up" data-aos-duration="1000">
+                    <div class="moving-shapes">
+                        <div class="movingshape-donut">
+                            <a href="" id="donut">
+                                <div>
+                                    <svg class="c-shape c-shape--active c-label-overview__shape" width="80"
+                                         height="80"
+                                         viewBox="0 0 80 80">
+                                        <path d="M40,0 C62.09139,0 80,17.90861 80,40 C80,62.09139 62.09139,80 40,80 C17.90861,80 0,62.09139 0,40 C0,17.90861 17.90861,0 40,0 Z M40.5,25 C31.9395864,25 25,31.9395864 25,40.5 C25,49.0604136 31.9395864,56 40.5,56 C49.0604136,56 56,49.0604136 56,40.5 C56,31.9395864 49.0604136,25 40.5,25 Z"></path>
+                                    </svg>
+                                    <svg class="c-shape c-shape--active c-label-overview__shape" width="80"
+                                         height="80"
+                                         viewBox="0 0 80 80">
+                                        <path d="M40,0 C62.09139,0 80,17.90861 80,40 C80,62.09139 62.09139,80 40,80 C17.90861,80 0,62.09139 0,40 C0,17.90861 17.90861,0 40,0 Z M40.5,25 C31.9395864,25 25,31.9395864 25,40.5 C25,49.0604136 31.9395864,56 40.5,56 C49.0604136,56 56,49.0604136 56,40.5 C56,31.9395864 49.0604136,25 40.5,25 Z"></path>
+                                    </svg>
+                                </div>
+                            </a>
                         </div>
-<!--                        <div class="col-md-6" data-aos="fade-up" data-aos-duration="1000">-->
-<!--                            <div class="skills-logos">-->
-<!--                                <div class="row">-->
-<!--                                    <img src="img/html.svg" alt="Skilled in HTML5" class="col-md-6">-->
-<!--                                    <img src="img/css.svg" alt="Skilled in CSS3" class="col-md-6">-->
-<!--                                </div>-->
-<!--                                <div class="row">-->
-<!--                                    <img src="img/javascript.svg" alt="Skilled in Javascript" class="col-md-6">-->
-<!--                                    <img src="img/vue.svg" alt="Skilled in Vue" class="col-md-6">-->
-<!--                                </div>-->
-<!--                            </div>-->
-<!--                        </div>-->
+                        <div class="movingshape-triangle">
+                            <a href="" id="driehoek">
+                                <div>
+                                    <svg width="70" height="81" viewBox="0 0 70 81">
+                                        <path d="M69.25.62l.14 79.76-69.28-40z"></path>
+                                    </svg>
+                                    <svg width="70" height="81" viewBox="0 0 70 81">
+                                        <defs>
+                                            <radialGradient id="gradient" cx="0.62" cy="0.5" fx="0.62" fy="0.5">
+                                                <stop offset="60%" stop-color="#191919"/>
+                                                <stop offset="95%" stop-color="#050505"/>
+                                            </radialGradient>
+                                        </defs>
+                                        <path d="M69.25.62l.14 79.76-69.28-40z"></path>
+                                    </svg>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="movingshape-square">
+                            <a href="" id="square">
+                                <div>
+                                    <svg class="c-shape c-shape--active c-label-overview__shape" width="69"
+                                         height="69" viewBox="0 0 69 69">
+                                        <path d="M0 0h69v69H0z"></path>
+                                    </svg>
+                                    <svg class="c-shape c-shape--active c-label-overview__shape" width="69"
+                                         height="69" viewBox="0 0 69 69">
+                                        <path d="M0 0h69v69H0z"></path>
+                                    </svg>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="movingshape-diamond">
+                            <a href="" id="diamond">
+                                <div>
+                                    <svg class="c-shape c-shape--active c-label-overview__shape" width="58"
+                                         height="58" viewBox="0 0 58 58">
+                                        <rect x="0" y="0" width="58" height="58"></rect>
+                                    </svg>
+                                    <svg class="c-shape c-shape--active c-label-overview__shape" width="58"
+                                         height="58" viewBox="0 0 58 58">
+                                        <rect x="0" y="0" width="58" height="58"></rect>
+                                    </svg>
+                                </div>
+                            </a>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -184,7 +249,8 @@
                     <div class="partner-logos" data-aos="fade-up" data-aos-duration="1000">
                         <a href="https://fontys.nl/Studeren/Vind-een-passende-opleiding/HBO-ICT.htm"
                            target="_blank"><img src="img/fontys.svg" alt="Fontys" class="fontys"></a>
-                        <a href="https://www.sogeti.nl/" target="_blank"><img src="img/sogeti.svg" alt="Sogeti" class="sogeti"></a>
+                        <a href="https://www.sogeti.nl/" target="_blank"><img src="img/sogeti.svg" alt="Sogeti"></a>
+                        <a href="https://salvemundi.nl/" target="_blank"><img src="img/salvemundi.svg" alt="SalveMundi"></a>
                     </div>
                 </div>
             </div>
