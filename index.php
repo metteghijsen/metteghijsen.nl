@@ -1,4 +1,20 @@
 <!doctype html>
+<!--
+
+  __  __      _   _          _____ _     _ _
+ |  \/  |    | | | |        / ____| |   (_|_)
+ | \  / | ___| |_| |_ ___  | |  __| |__  _ _ ___  ___ _ __
+ | |\/| |/ _ \ __| __/ _ \ | | |_ | '_ \| | / __|/ _ \ '_ \
+ | |  | |  __/ |_| ||  __/ | |__| | | | | | \__ \  __/ | | |
+ |_|  |_|\___|\__|\__\___|  \_____|_| |_|_| |___/\___|_| |_|
+                                         _/ |
+                                        |__/
+Wat leuk dat je op mijn site kijkt!
+Interesse? De site is te vinden op mijn GitHub :)
+Als je vragen hebt, neem vooral contact met me op. Ik help je graag!
+
+-->
+
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -15,16 +31,10 @@
 </head>
 <body>
 
-<!--<ul class="topnav">-->
-<!--    <li><a href="#nicetomeetyou">About</a></li>-->
-<!--    <li><a href="">Cases</a></li>-->
-<!--    <li><a href="#contact">Contact</a></li>-->
-<!--</ul>-->
-
 <!--Navigation bar-->
 <header class="header">
     <nav class="navbar">
-        <a href="#" class="nav-logo">
+        <a href="#" class="nav-logo" cursor-class="arrow">
             <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
                  viewBox="0 0 194.13 164.74">
                 <defs>
@@ -57,16 +67,16 @@
         </a>
         <ul class="nav-menu">
             <li class="nav-item">
-                <a href="#nicetomeetyou" class="nav-link">About</a>
+                <a href="#nicetomeetyou" class="nav-link" cursor-class="arrow">About</a>
             </li>
             <li class="nav-item">
-                <a href="#cases" class="nav-link">Cases</a>
+                <a href="#cases" class="nav-link" cursor-class="arrow">Cases</a>
             </li>
             <li class="nav-item">
-                <a href="#contact" class="nav-link">Contact</a>
+                <a href="#contact" class="nav-link" cursor-class="arrow">Contact</a>
             </li>
         </ul>
-        <div class="hamburger">
+        <div class="hamburger" cursor-class="arrow">
             <span class="bar"></span>
             <span class="bar"></span>
             <span class="bar"></span>
@@ -75,6 +85,10 @@
 </header>
 
 <div class="content">
+    <div id="cursor">
+        <div class="cursor__circle"></div>
+    </div>
+
     <!--    Home header-->
     <div class="home-header" id="home-header">
         <div class="container">
@@ -94,7 +108,7 @@
                     <div class="diamond"></div>
                 </div>
                 <div class="col-sm-12">
-                    <a class="scrolldown" href="#nicetomeetyou"><i class="bi bi-arrow-down-short"></i></a>
+                    <a class="scrolldown" href="#nicetomeetyou" cursor-class="arrow"><i class="bi bi-arrow-down-short"></i></a>
                 </div>
             </div>
         </div>
@@ -130,84 +144,84 @@
                 </div>
 
 
-                <!--                        <div class="col-md-6" data-aos="fade-up" data-aos-duration="1000">-->
-                <!--                            <div class="skills-logos">-->
-                <!--                                <div class="row">-->
-                <!--                                    <img src="img/html.svg" alt="Skilled in HTML5" class="col-md-6">-->
-                <!--                                    <img src="img/css.svg" alt="Skilled in CSS3" class="col-md-6">-->
-                <!--                                </div>-->
-                <!--                                <div class="row">-->
-                <!--                                    <img src="img/javascript.svg" alt="Skilled in Javascript" class="col-md-6">-->
-                <!--                                    <img src="img/vue.svg" alt="Skilled in Vue" class="col-md-6">-->
-                <!--                                </div>-->
-                <!--                            </div>-->
-                <!--                        </div>-->
+<!--                                        <div class="col-md-6" data-aos="fade-up" data-aos-duration="1000">-->
+<!--                                            <div class="skills-logos">-->
+<!--                                                <div class="row">-->
+<!--                                                    <img src="img/html.svg" alt="Skilled in HTML5" class="col-md-6">-->
+<!--                                                    <img src="img/css.svg" alt="Skilled in CSS3" class="col-md-6">-->
+<!--                                                </div>-->
+<!--                                                <div class="row">-->
+<!--                                                    <img src="img/javascript.svg" alt="Skilled in Javascript" class="col-md-6">-->
+<!--                                                    <img src="img/vue.svg" alt="Skilled in Vue" class="col-md-6">-->
+<!--                                                </div>-->
+<!--                                            </div>-->
+<!--                                        </div>-->
 
-                <div class="col-md-6" data-aos="fade-up" data-aos-duration="1000">
-                    <div class="moving-shapes">
-                        <div class="movingshape-donut">
-                            <a href="" id="donut">
-                                <div>
-                                    <svg class="c-shape c-shape--active c-label-overview__shape" width="80"
-                                         height="80"
-                                         viewBox="0 0 80 80">
-                                        <path d="M40,0 C62.09139,0 80,17.90861 80,40 C80,62.09139 62.09139,80 40,80 C17.90861,80 0,62.09139 0,40 C0,17.90861 17.90861,0 40,0 Z M40.5,25 C31.9395864,25 25,31.9395864 25,40.5 C25,49.0604136 31.9395864,56 40.5,56 C49.0604136,56 56,49.0604136 56,40.5 C56,31.9395864 49.0604136,25 40.5,25 Z"></path>
-                                    </svg>
-                                    <svg class="c-shape c-shape--active c-label-overview__shape" width="80"
-                                         height="80"
-                                         viewBox="0 0 80 80">
-                                        <path d="M40,0 C62.09139,0 80,17.90861 80,40 C80,62.09139 62.09139,80 40,80 C17.90861,80 0,62.09139 0,40 C0,17.90861 17.90861,0 40,0 Z M40.5,25 C31.9395864,25 25,31.9395864 25,40.5 C25,49.0604136 31.9395864,56 40.5,56 C49.0604136,56 56,49.0604136 56,40.5 C56,31.9395864 49.0604136,25 40.5,25 Z"></path>
-                                    </svg>
-                                </div>
-                            </a>
-                        </div>
-                        <div class="movingshape-triangle">
-                            <a href="" id="driehoek">
-                                <div>
-                                    <svg width="70" height="81" viewBox="0 0 70 81">
-                                        <path d="M69.25.62l.14 79.76-69.28-40z"></path>
-                                    </svg>
-                                    <svg width="70" height="81" viewBox="0 0 70 81">
-                                        <defs>
-                                            <radialGradient id="gradient" cx="0.62" cy="0.5" fx="0.62" fy="0.5">
-                                                <stop offset="60%" stop-color="#191919"/>
-                                                <stop offset="95%" stop-color="#050505"/>
-                                            </radialGradient>
-                                        </defs>
-                                        <path d="M69.25.62l.14 79.76-69.28-40z"></path>
-                                    </svg>
-                                </div>
-                            </a>
-                        </div>
-                        <div class="movingshape-square">
-                            <a href="" id="square">
-                                <div>
-                                    <svg class="c-shape c-shape--active c-label-overview__shape" width="69"
-                                         height="69" viewBox="0 0 69 69">
-                                        <path d="M0 0h69v69H0z"></path>
-                                    </svg>
-                                    <svg class="c-shape c-shape--active c-label-overview__shape" width="69"
-                                         height="69" viewBox="0 0 69 69">
-                                        <path d="M0 0h69v69H0z"></path>
-                                    </svg>
-                                </div>
-                            </a>
-                        </div>
-                        <div class="movingshape-diamond">
-                            <a href="" id="diamond">
-                                <div>
-                                    <svg class="c-shape c-shape--active c-label-overview__shape" width="58"
-                                         height="58" viewBox="0 0 58 58">
-                                        <rect x="0" y="0" width="58" height="58"></rect>
-                                    </svg>
-                                    <svg class="c-shape c-shape--active c-label-overview__shape" width="58"
-                                         height="58" viewBox="0 0 58 58">
-                                        <rect x="0" y="0" width="58" height="58"></rect>
-                                    </svg>
-                                </div>
-                            </a>
-                        </div>
-                    </div>
+<!--                <div class="col-md-6" data-aos="fade-up" data-aos-duration="1000">-->
+<!--                    <div class="moving-shapes">-->
+<!--                        <div class="movingshape-donut">-->
+<!--                            <a href="" id="donut">-->
+<!--                                <div>-->
+<!--                                    <svg class="c-shape c-shape--active c-label-overview__shape" width="80"-->
+<!--                                         height="80"-->
+<!--                                         viewBox="0 0 80 80">-->
+<!--                                        <path d="M40,0 C62.09139,0 80,17.90861 80,40 C80,62.09139 62.09139,80 40,80 C17.90861,80 0,62.09139 0,40 C0,17.90861 17.90861,0 40,0 Z M40.5,25 C31.9395864,25 25,31.9395864 25,40.5 C25,49.0604136 31.9395864,56 40.5,56 C49.0604136,56 56,49.0604136 56,40.5 C56,31.9395864 49.0604136,25 40.5,25 Z"></path>-->
+<!--                                    </svg>-->
+<!--                                    <svg class="c-shape c-shape--active c-label-overview__shape" width="80"-->
+<!--                                         height="80"-->
+<!--                                         viewBox="0 0 80 80">-->
+<!--                                        <path d="M40,0 C62.09139,0 80,17.90861 80,40 C80,62.09139 62.09139,80 40,80 C17.90861,80 0,62.09139 0,40 C0,17.90861 17.90861,0 40,0 Z M40.5,25 C31.9395864,25 25,31.9395864 25,40.5 C25,49.0604136 31.9395864,56 40.5,56 C49.0604136,56 56,49.0604136 56,40.5 C56,31.9395864 49.0604136,25 40.5,25 Z"></path>-->
+<!--                                    </svg>-->
+<!--                                </div>-->
+<!--                            </a>-->
+<!--                        </div>-->
+<!--                        <div class="movingshape-triangle">-->
+<!--                            <a href="" id="driehoek">-->
+<!--                                <div>-->
+<!--                                    <svg width="70" height="81" viewBox="0 0 70 81">-->
+<!--                                        <path d="M69.25.62l.14 79.76-69.28-40z"></path>-->
+<!--                                    </svg>-->
+<!--                                    <svg width="70" height="81" viewBox="0 0 70 81">-->
+<!--                                        <defs>-->
+<!--                                            <radialGradient id="gradient" cx="0.62" cy="0.5" fx="0.62" fy="0.5">-->
+<!--                                                <stop offset="60%" stop-color="#191919"/>-->
+<!--                                                <stop offset="95%" stop-color="#050505"/>-->
+<!--                                            </radialGradient>-->
+<!--                                        </defs>-->
+<!--                                        <path d="M69.25.62l.14 79.76-69.28-40z"></path>-->
+<!--                                    </svg>-->
+<!--                                </div>-->
+<!--                            </a>-->
+<!--                        </div>-->
+<!--                        <div class="movingshape-square">-->
+<!--                            <a href="" id="square">-->
+<!--                                <div>-->
+<!--                                    <svg class="c-shape c-shape--active c-label-overview__shape" width="69"-->
+<!--                                         height="69" viewBox="0 0 69 69">-->
+<!--                                        <path d="M0 0h69v69H0z"></path>-->
+<!--                                    </svg>-->
+<!--                                    <svg class="c-shape c-shape--active c-label-overview__shape" width="69"-->
+<!--                                         height="69" viewBox="0 0 69 69">-->
+<!--                                        <path d="M0 0h69v69H0z"></path>-->
+<!--                                    </svg>-->
+<!--                                </div>-->
+<!--                            </a>-->
+<!--                        </div>-->
+<!--                        <div class="movingshape-diamond">-->
+<!--                            <a href="" id="diamond">-->
+<!--                                <div>-->
+<!--                                    <svg class="c-shape c-shape--active c-label-overview__shape" width="58"-->
+<!--                                         height="58" viewBox="0 0 58 58">-->
+<!--                                        <rect x="0" y="0" width="58" height="58"></rect>-->
+<!--                                    </svg>-->
+<!--                                    <svg class="c-shape c-shape--active c-label-overview__shape" width="58"-->
+<!--                                         height="58" viewBox="0 0 58 58">-->
+<!--                                        <rect x="0" y="0" width="58" height="58"></rect>-->
+<!--                                    </svg>-->
+<!--                                </div>-->
+<!--                            </a>-->
+<!--                        </div>-->
+<!--                    </div>-->
                 </div>
             </div>
         </div>
@@ -230,12 +244,6 @@
                 <a href="">Open case →</a>
             </div>
         </section>
-        <section>
-            <div class="case-nore bg">
-                <h2>nore</h2>
-                <a href="">Open case →</a>
-            </div>
-        </section>
     </div>
 
     <!--    Partners-->
@@ -248,9 +256,9 @@
                     </div>
                     <div class="partner-logos" data-aos="fade-up" data-aos-duration="1000">
                         <a href="https://fontys.nl/Studeren/Vind-een-passende-opleiding/HBO-ICT.htm"
-                           target="_blank"><img src="img/fontys.svg" alt="Fontys" class="fontys"></a>
-                        <a href="https://www.sogeti.nl/" target="_blank"><img src="img/sogeti.svg" alt="Sogeti"></a>
-                        <a href="https://salvemundi.nl/" target="_blank"><img src="img/salvemundi.svg" alt="SalveMundi"></a>
+                           target="_blank" cursor-class="arrow"><img src="img/fontys.svg" alt="Fontys" class="fontys"></a>
+                        <a href="https://www.sogeti.nl/" target="_blank" cursor-class="arrow"><img src="img/sogeti.svg" alt="Sogeti"></a>
+                        <a href="https://salvemundi.nl/" target="_blank" cursor-class="arrow"><img src="img/salvemundi.svg" alt="SalveMundi"></a>
                     </div>
                 </div>
             </div>
@@ -292,8 +300,7 @@
         </div>
     </div>
 
-    <a class="gotopbutton" id="gotopbutton" href="#"><i class="bi bi-arrow-up-short"></i></a>
-</div>
+    <a class="gotopbutton" id="gotopbutton" cursor-class="arrow" href="#"><i class="bi bi-arrow-up-short"></i></a>
 
 <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
 <script>
