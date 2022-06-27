@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,500;1,400&display=swap');
 
 :root{
-    --background-color: black;
+    --background-color: #000000;
     --blue: #4369FB;
     --red: #E85D5D;
     --yellow: #FFB650;
@@ -48,16 +48,6 @@ html, body {
     src: url("../fonts/Montserrat-Bold.woff") format("woff");
 }
 
-
-@keyframes movingShapes {
-    from    { transform:rotateY(50deg); }
-    20%     { transform:rotateY(30deg); }
-    40%     { transform:rotateY(70deg); }
-    60%     { transform:rotateY(35deg); }
-    80%     { transform:rotateY(60deg); }
-    to      { transform:rotateY(50deg); }
-}
-
 @keyframes  moveDown{
     0% {
         transform: translateY(0vh);
@@ -69,6 +59,18 @@ html, body {
         transform: translateY(0vh);
     }
 }
+
+/*@keyframes moveShape{*/
+/*    0% {*/
+/*        transform: translateY(0vh) rotate(90deg) scale(2);*/
+/*    }*/
+/*    50% {*/
+/*        transform: translateY(2vh) rotate(90deg) scale(2);*/
+/*    }*/
+/*    100% {*/
+/*        transform: translateY(0vh) rotate(90deg) scale(2);*/
+/*    }*/
+/*}*/
 
 /*Cursor styling*/
 #cursor {
@@ -183,8 +185,8 @@ html, body {
         display: none;
     }
 }
-/*End of cursor styling*/
-
+/*Einde cursor styling*/
+/*Algemene styling*/
 * {
     margin: 0;
     padding: 0;
@@ -247,7 +249,7 @@ html, body {
 
 .home-header{
     background-color: var(--background-color);
-    padding-bottom: 6vh;
+    height: 100vh;
 }
 
 .name{
@@ -366,11 +368,56 @@ html, body {
     color: var(--text-color)  !important;
 }
 
+/*Nice to meet you*/
+
 .nicetomeetyou{
     padding-top: 15vh;
-    padding-bottom: 13vh;
-    background-color: var(--background-color);
+    height: 120vh
 }
+
+.nicetomeetyou-shapes{
+    position: absolute;
+    top: 150%;
+    left: 90%;
+    z-index: 10;
+}
+
+.nicetomeetyou-shapes>.circle{
+    position: absolute;
+    padding: 150px;
+    left: -3vw;
+    top: -20vh;
+    border-width: 30px;
+    animation: moveDown 5s infinite;
+}
+
+.nicetomeetyou-shapes>.triangle{
+    position: absolute;
+    top: 40vh;
+    right: 5vw;
+    transform: rotate(107deg) scale(3.5);
+    /*animation: moveDown 5s infinite;*/
+}
+
+.nicetomeetyou-shapes>.square{
+    transform: scale(3);
+    top: -12vh;
+    right: 9vw;
+    position: absolute;
+    /*animation: moveDown 5s infinite;*/
+}
+
+.nicetomeetyou-shapes>.diamond{
+    background-color: var(--green);
+    padding: 15px;
+    margin: 10px;
+    position: absolute;
+    right: 16vw;
+    top: 12vh;
+    transform: scale(3.5) rotate(45deg);
+    /*animation: moveDown 5s infinite;*/
+}
+
 
 .story-title-outline h2{
     font-family: Poppins-Bold, sans-serif;
@@ -406,78 +453,7 @@ html, body {
     cursor: default;
 }
 
-.moving-shapes{
-    display: grid;
-    grid-template-columns: repeat(2,2fr);
-}
-
-div a>div{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin: 30px;
-}
-
-div a>div svg:nth-of-type(2){
-    position: absolute;
-    fill: url(#gradient);
-    filter: drop-shadow(5px 5px 20px rgba(0,0,0,.25));
-    transform: rotateY(50deg);
-    transform-origin: right center;
-    animation: 5s ease-in-out 0s infinite alternate both running movingShapes;
-}
-
-div a.openklappen>div svg:nth-of-type(2){
-    transition: all ease-in-out 200ms;
-    transform: rotateY(180deg);
-    animation: none;
-}
-
-div a.dichtklappen>div svg:nth-of-type(2){
-    transition: all ease-in-out 500ms;
-    transform: rotateY(50deg);
-    animation: none;
-}
-
-div a.stilzetten>div svg:nth-of-type(2){
-    transition: all ease-in-out 5ms;
-    transform: rotateY(50deg);
-    animation: none;
-}
-
-a#driehoek>div{
-    transform: rotate(-30deg);
-    transform-origin: 150px 70px;
-}
-a#driehoek svg:nth-of-type(1){
-    fill: var(--blue);
-}
-
-a#kruis>div{
-    transform: rotate(-45deg);
-    transform-origin: center center;
-}
-a#kruis svg:nth-of-type(1){
-    fill: var(--green);
-}
-
-a#donut svg:nth-of-type(1){
-    fill: var(--red);
-}
-
-a#square svg:nth-of-type(1){
-    fill: var(--yellow);
-}
-
-a#diamond svg:nth-of-type(1){
-    fill: var(--green);
-}
-
-a#diamond>div{
-    transform: rotate(-45deg);
-    transform-origin: center center;
-}
-
+/*Skills*/
 .skills-logos{
     display: flex;
     flex-direction: column;
@@ -502,12 +478,14 @@ a#diamond>div{
     transition: ease .5s;
 }
 
+/*Cases*/
 .cases{
     margin: 0;
     padding: 0;
     border: 0;
     font-size: 100%;
     vertical-align: baseline;
+    height: 120vh;
 }
 
 .cases-header{
@@ -519,68 +497,6 @@ a#diamond>div{
     background-color: var(--background-color);
 }
 
-.cases>section{
-    height: 100vh;
-}
-
-.cases>section>div{
-    height: 100vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    position: fixed;
-    left: 0;
-    top: 0;
-    z-index: 1;
-    width: 100%;
-    clip: rect(0 , auto, auto, 0);
-}
-
-.case-nore{
-    background-color: var(--red);
-}
-
-.case-printpal{
-    background-color: #1ad7a8;
-    background-image: url("../img/printpalbackground.png");
-}
-
-.case-yourworld{
-    background-color: #31495e;
-    background-image: url("../img/backgroundyourworld.png");
-}
-
-.bg{
-    position: fixed;
-    display: block;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-size: cover;
-    background-position: center center;
-    transform: translateZ(0);
-    will-change: transform;
-}
-
-.cases>section>div>h2{
-    font-family: Poppins-Bold, sans-serif;
-    font-size: 70px;
-    white-space: nowrap;
-    color: var(--text-color);
-    text-shadow: 2px 3px 5px rgba(0,0,0,0.5);
-}
-
-.cases>section>div>a{
-    font-family: "Montserrat-Regular", sans-serif;
-    color: white;
-    font-size: 22px;
-    text-align: center;
-    text-decoration: none;
-    text-shadow: 2px 3px 5px rgba(0,0,0,0.5);
-}
-
 .img-wrapper{
     overflow: hidden;
 }
@@ -589,6 +505,68 @@ a#diamond>div{
     min-height: 210px;
 }
 
+.cases-wrapper{
+    display: flex;
+    justify-content: center;
+}
+
+.case{
+    height: 40vh;
+    border-radius: 5vh;
+    text-decoration: none;
+    transition: all .5s ease;
+    box-sizing: border-box;
+    border: 5px solid transparent;
+    background-clip:padding-box;
+}
+
+.case:hover .text{
+    opacity: 1;
+}
+
+.text{
+    opacity: 0;
+    transition: opacity .5s ease-in-out;
+    text-align: center;
+}
+
+.case-bg{
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.case-text{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.case>h2{
+    font-family: Poppins-Bold, sans-serif;
+    font-size: 70px;
+    white-space: nowrap;
+    color: var(--text-color);
+    /*text-shadow: 2px 3px 5px rgba(0,0,0,0.5);*/
+    text-shadow: 0px 0px 6px rgba(58, 58, 58, 0.7);
+}
+
+.printpal{
+    background-color: #1ad7a8;
+    background-image: url("../img/printpalbackground.png");
+}
+
+.yourworld{
+    background-color: #31495e;
+    background-image: url("../img/backgroundyourworld.png");
+}
+
+.salvemundi{
+    background-color: #452572;
+}
+
+/*Partners styling*/
 .partners{
     margin: 30vh 0 30vh 0;
     background-color: var(--background-color);

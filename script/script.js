@@ -35,42 +35,6 @@ window.addEventListener("scroll", () => {
     }
 })
 
-//Moving shapes
-document.querySelectorAll("div a").forEach((flapje)=>{
-    flapje.addEventListener("mouseenter",()=>{
-        clearTimeout(flapje.timeout)
-        flapje.classList.remove("dichtklappen")
-        flapje.classList.add("stilzetten")
-        setTimeout(()=>{
-            flapje.classList.remove("stilzetten")
-            flapje.classList.add("openklappen")
-        })
-    })
-    flapje.addEventListener("mouseleave",()=>{
-        flapje.classList.remove("openklappen")
-        flapje.classList.add("dichtklappen")
-        flapje.timeout = setTimeout(()=>{
-            flapje.classList.remove("dichtklappen")
-        },500)
-    })
-})
-
-//Parallax Scroll
-const determine_scroll = () => {
-    const scrollafstand = window.scrollY;
-    const hoogte_pagina = document.querySelector("section").clientHeight;
-    const hoogte = document.querySelector("section:nth-of-type(1)").offsetTop;
-    document.querySelectorAll("section>div").forEach((pagina, index) => {
-        const start_rect_clip = (((index * hoogte_pagina) - scrollafstand) + hoogte) + "px";
-        const end_rect_clip = (((index + 1) * hoogte_pagina) - scrollafstand + hoogte) + "px";
-        pagina.style.setProperty("clip", "rect(" + start_rect_clip + ",auto," + end_rect_clip + ",0)")
-    })
-}
-
-document.addEventListener("scroll", determine_scroll)
-window.addEventListener("resize", determine_scroll)
-determine_scroll()
-
 //Leeftijd en Copyrightjaar automatisch updaten
 
 let copyrightEle = document.getElementById("copyright");
@@ -153,8 +117,6 @@ function loop() {
 }
 
 requestAnimationFrame(loop);
-
-
 
 const cursorModifiers = document.querySelectorAll('[cursor-class]');
 

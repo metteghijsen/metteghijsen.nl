@@ -15,7 +15,7 @@ Als je vragen hebt, neem vooral contact met me op. Ik help je graag!
 
 -->
 
-<html lang="en">
+<html lang="en" xmlns="http://www.w3.org/1999/html">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport"
@@ -23,7 +23,7 @@ Als je vragen hebt, neem vooral contact met me op. Ik help je graag!
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
           integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
-    <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="css/style.css">
     <link rel="icon" href="img/mglogo.svg">
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css">
@@ -39,14 +39,14 @@ Als je vragen hebt, neem vooral contact met me op. Ik help je graag!
                  viewBox="0 0 194.13 164.74">
                 <defs>
                     <style>.g {
-                            isolation: isolate;
-                        }
+                        isolation: isolate;
+                    }
 
-                        .h {
-                            fill: #fff;
-                            font-family: Nano, Nano;
-                            font-size: 146.43px;
-                        }</style>
+                    .h {
+                        fill: #fff;
+                        font-family: Nano, Nano;
+                        font-size: 146.43px;
+                    }</style>
                 </defs>
                 <g id="a" class="g">
                     <g id="b">
@@ -84,13 +84,13 @@ Als je vragen hebt, neem vooral contact met me op. Ik help je graag!
     </nav>
 </header>
 
-<div class="content">
+<main class="content">
     <div id="cursor">
         <div class="cursor__circle"></div>
     </div>
 
     <!--    Home header-->
-    <div class="home-header" id="home-header">
+    <section class="home-header" id="home-header">
         <div class="container">
             <div class="row">
                 <div class="col-sm-12 name" data-aos="zoom-in" data-aos-duration="1000">
@@ -108,17 +108,24 @@ Als je vragen hebt, neem vooral contact met me op. Ik help je graag!
                     <div class="diamond"></div>
                 </div>
                 <div class="col-sm-12">
-                    <a class="scrolldown" href="#nicetomeetyou" cursor-class="arrow"><i class="bi bi-arrow-down-short"></i></a>
+                    <a class="scrolldown" href="#nicetomeetyou"><i class="bi bi-arrow-down-short"
+                                                                   cursor-class="arrow"></i></a>
                 </div>
             </div>
         </div>
-    </div>
+    </section>
 
     <!--    Nice to meet you-->
-    <div class="nicetomeetyou" id="nicetomeetyou">
+    <section class="nicetomeetyou" id="nicetomeetyou">
+        <div class="nicetomeetyou-shapes">
+            <div class="circle"></div>
+            <div class="triangle"></div>
+            <div class="square"></div>
+            <div class="diamond"></div>
+        </div>
         <div class="container">
             <div class="row">
-                <div class="col-sm-6" data-aos="fade-up" data-aos-duration="1000">
+                <div class="col-sm-9" data-aos="fade-up" data-aos-duration="1000">
                     <div class="story-title-outline radial">
                         <h2>nice to meet you!</h2>
                     </div>
@@ -129,7 +136,16 @@ Als je vragen hebt, neem vooral contact met me op. Ik help je graag!
                         <h2>nice to meet you!</h2>
                     </div>
                     <br/>
-                    <div class="story-description">
+                </div>
+<!--                <div class="col-sm-3" data-aos="fade-up" data-aos-duration="1000">-->
+<!--                    <div class="story-image-box">-->
+<!--                        <div class="story-image portrait">-->
+<!--                            <img src="img/portrait.png" alt="">-->
+<!--                        </div>-->
+<!--                    </div>-->
+<!--                </div>-->
+                <div class="row">
+                    <div class="col-sm-6 story-description">
                         <p id="description2">
                             My name is Mette. I am 18 years old and I am a junior web developer.
                             <br>
@@ -143,130 +159,69 @@ Als je vragen hebt, neem vooral contact met me op. Ik help je graag!
                     </div>
                 </div>
 
-
-<!--                                        <div class="col-md-6" data-aos="fade-up" data-aos-duration="1000">-->
-<!--                                            <div class="skills-logos">-->
-<!--                                                <div class="row">-->
-<!--                                                    <img src="img/html.svg" alt="Skilled in HTML5" class="col-md-6">-->
-<!--                                                    <img src="img/css.svg" alt="Skilled in CSS3" class="col-md-6">-->
-<!--                                                </div>-->
-<!--                                                <div class="row">-->
-<!--                                                    <img src="img/javascript.svg" alt="Skilled in Javascript" class="col-md-6">-->
-<!--                                                    <img src="img/vue.svg" alt="Skilled in Vue" class="col-md-6">-->
-<!--                                                </div>-->
-<!--                                            </div>-->
-<!--                                        </div>-->
-
-<!--                <div class="col-md-6" data-aos="fade-up" data-aos-duration="1000">-->
-<!--                    <div class="moving-shapes">-->
-<!--                        <div class="movingshape-donut">-->
-<!--                            <a href="" id="donut">-->
-<!--                                <div>-->
-<!--                                    <svg class="c-shape c-shape--active c-label-overview__shape" width="80"-->
-<!--                                         height="80"-->
-<!--                                         viewBox="0 0 80 80">-->
-<!--                                        <path d="M40,0 C62.09139,0 80,17.90861 80,40 C80,62.09139 62.09139,80 40,80 C17.90861,80 0,62.09139 0,40 C0,17.90861 17.90861,0 40,0 Z M40.5,25 C31.9395864,25 25,31.9395864 25,40.5 C25,49.0604136 31.9395864,56 40.5,56 C49.0604136,56 56,49.0604136 56,40.5 C56,31.9395864 49.0604136,25 40.5,25 Z"></path>-->
-<!--                                    </svg>-->
-<!--                                    <svg class="c-shape c-shape--active c-label-overview__shape" width="80"-->
-<!--                                         height="80"-->
-<!--                                         viewBox="0 0 80 80">-->
-<!--                                        <path d="M40,0 C62.09139,0 80,17.90861 80,40 C80,62.09139 62.09139,80 40,80 C17.90861,80 0,62.09139 0,40 C0,17.90861 17.90861,0 40,0 Z M40.5,25 C31.9395864,25 25,31.9395864 25,40.5 C25,49.0604136 31.9395864,56 40.5,56 C49.0604136,56 56,49.0604136 56,40.5 C56,31.9395864 49.0604136,25 40.5,25 Z"></path>-->
-<!--                                    </svg>-->
-<!--                                </div>-->
-<!--                            </a>-->
-<!--                        </div>-->
-<!--                        <div class="movingshape-triangle">-->
-<!--                            <a href="" id="driehoek">-->
-<!--                                <div>-->
-<!--                                    <svg width="70" height="81" viewBox="0 0 70 81">-->
-<!--                                        <path d="M69.25.62l.14 79.76-69.28-40z"></path>-->
-<!--                                    </svg>-->
-<!--                                    <svg width="70" height="81" viewBox="0 0 70 81">-->
-<!--                                        <defs>-->
-<!--                                            <radialGradient id="gradient" cx="0.62" cy="0.5" fx="0.62" fy="0.5">-->
-<!--                                                <stop offset="60%" stop-color="#191919"/>-->
-<!--                                                <stop offset="95%" stop-color="#050505"/>-->
-<!--                                            </radialGradient>-->
-<!--                                        </defs>-->
-<!--                                        <path d="M69.25.62l.14 79.76-69.28-40z"></path>-->
-<!--                                    </svg>-->
-<!--                                </div>-->
-<!--                            </a>-->
-<!--                        </div>-->
-<!--                        <div class="movingshape-square">-->
-<!--                            <a href="" id="square">-->
-<!--                                <div>-->
-<!--                                    <svg class="c-shape c-shape--active c-label-overview__shape" width="69"-->
-<!--                                         height="69" viewBox="0 0 69 69">-->
-<!--                                        <path d="M0 0h69v69H0z"></path>-->
-<!--                                    </svg>-->
-<!--                                    <svg class="c-shape c-shape--active c-label-overview__shape" width="69"-->
-<!--                                         height="69" viewBox="0 0 69 69">-->
-<!--                                        <path d="M0 0h69v69H0z"></path>-->
-<!--                                    </svg>-->
-<!--                                </div>-->
-<!--                            </a>-->
-<!--                        </div>-->
-<!--                        <div class="movingshape-diamond">-->
-<!--                            <a href="" id="diamond">-->
-<!--                                <div>-->
-<!--                                    <svg class="c-shape c-shape--active c-label-overview__shape" width="58"-->
-<!--                                         height="58" viewBox="0 0 58 58">-->
-<!--                                        <rect x="0" y="0" width="58" height="58"></rect>-->
-<!--                                    </svg>-->
-<!--                                    <svg class="c-shape c-shape--active c-label-overview__shape" width="58"-->
-<!--                                         height="58" viewBox="0 0 58 58">-->
-<!--                                        <rect x="0" y="0" width="58" height="58"></rect>-->
-<!--                                    </svg>-->
-<!--                                </div>-->
-<!--                            </a>-->
-<!--                        </div>-->
-<!--                    </div>-->
-                </div>
+                <!--                                        <div class="col-md-6" data-aos="fade-up" data-aos-duration="1000">-->
+                <!--                                            <div class="skills-logos">-->
+                <!--                                                <div class="row">-->
+                <!--                                                    <img src="img/html.svg" alt="Skilled in HTML5" class="col-md-6">-->
+                <!--                                                    <img src="img/css.svg" alt="Skilled in CSS3" class="col-md-6">-->
+                <!--                                                </div>-->
+                <!--                                                <div class="row">-->
+                <!--                                                    <img src="img/javascript.svg" alt="Skilled in Javascript" class="col-md-6">-->
+                <!--                                                    <img src="img/vue.svg" alt="Skilled in Vue" class="col-md-6">-->
+                <!--                                                </div>-->
+                <!--                                            </div>-->
+                <!--                                        </div>-->
             </div>
         </div>
-    </div>
+    </section>
 
     <!--    Cases-->
-    <div class="cases" id="cases">
+    <section class="cases" id="cases">
         <div class="img-wrapper" data-aos="zoom-in" data-aos-duration="500">
             <img src="img/cases3.svg" alt="Cases" class="cases-header">
         </div>
-        <section>
-            <div class="case-printpal bg">
-                <h2>printpal</h2>
-                <a href="">Open case →</a>
-            </div>
-        </section>
-        <section>
-            <div class="case-yourworld bg">
-                <h2>yourworld</h2>
-                <a href="">Open case →</a>
-            </div>
-        </section>
-    </div>
-
-    <!--    Partners-->
-    <div class="partners">
         <div class="container">
-            <div class="row">
-                <div class="col-sm-12">
-                    <div class="partners-title" data-aos="fade-up" data-aos-duration="1000">
-                        <h2>some amazing partners</h2>
-                    </div>
-                    <div class="partner-logos" data-aos="fade-up" data-aos-duration="1000">
-                        <a href="https://fontys.nl/Studeren/Vind-een-passende-opleiding/HBO-ICT.htm"
-                           target="_blank" cursor-class="arrow"><img src="img/fontys.svg" alt="Fontys" class="fontys"></a>
-                        <a href="https://www.sogeti.nl/" target="_blank" cursor-class="arrow"><img src="img/sogeti.svg" alt="Sogeti"></a>
-                        <a href="https://salvemundi.nl/" target="_blank" cursor-class="arrow"><img src="img/salvemundi.svg" alt="SalveMundi"></a>
-                    </div>
-                </div>
+            <div class="row cases-wrapper">
+                <a href="" class="col-lg-4 case printpal case-bg case-text" data-aos="fade-up" data-aos-duration="1000"
+                   cursor-class="arrow">
+                    <h2 class="text">printpal</h2>
+                </a>
+                <a href="" class="col-lg-4 case yourworld case-bg case-text" data-aos="fade-up" data-aos-duration="1000"
+                   cursor-class="arrow">
+                    <h2 class="text">yourworld</h2>
+                </a>
+                <a href="" class="col-lg-4 case salvemundi case-bg case-text" data-aos="fade-up" data-aos-duration="1000"
+                   cursor-class="arrow">
+                    <h2 class="text">salve<br>mundi</h2>
+                </a>
             </div>
         </div>
-    </div>
+    </section>
+
+    <!--        Partners-->
+    <!--    <section class="partners">-->
+    <!--        <div class="container">-->
+    <!--            <div class="row">-->
+    <!--                <div class="col-sm-12">-->
+    <!--                    <div class="partners-title" data-aos="fade-up" data-aos-duration="1000">-->
+    <!--                        <h2>some amazing partners</h2>-->
+    <!--                    </div>-->
+    <!--                    <div class="partner-logos" data-aos="fade-up" data-aos-duration="1000">-->
+    <!--                        <a href="https://fontys.nl/Studeren/Vind-een-passende-opleiding/HBO-ICT.htm"-->
+    <!--                           target="_blank" cursor-class="arrow"><img src="img/fontys.svg" alt="Fontys"-->
+    <!--                                                                     class="fontys"></a>-->
+    <!--                        <a href="https://www.sogeti.nl/" target="_blank" cursor-class="arrow"><img src="img/sogeti.svg"-->
+    <!--                                                                                                   alt="Sogeti"></a>-->
+    <!--                        <a href="https://salvemundi.nl/" target="_blank" cursor-class="arrow"><img-->
+    <!--                                src="img/salvemundi.svg" alt="SalveMundi"></a>-->
+    <!--                    </div>-->
+    <!--                </div>-->
+    <!--            </div>-->
+    <!--        </div>-->
+    <!--    </section>-->
 
     <!--    Contact-->
-    <div class="contact" id="contact">
+    <section class="contact" id="contact">
         <div class="container">
             <div class="row">
                 <div class="col-sm-12" data-aos="fade-up" data-aos-duration="1000">
@@ -284,11 +239,14 @@ Als je vragen hebt, neem vooral contact met me op. Ik help je graag!
                         </div>
 
                         <h3>Say hello</h3>
-                        <p><a href="mailto: mette.ghijsen@student.fontys.nl" cursor-class="arrow"> → mette.ghijsen@student.fontys.nl</a></p>
+                        <p><a href="mailto: mette.ghijsen@student.fontys.nl" cursor-class="arrow"> →
+                            mette.ghijsen@student.fontys.nl</a></p>
 
                         <h3>Social Media</h3>
-                        <p><a href="https://github.com/metteghijsen" target="_blank" cursor-class="arrow">→ Github </a><br>
-                            <a href="https://www.linkedin.com/in/mette-ghijsen-857594203/" target="_blank" cursor-class="arrow"> →
+                        <p><a href="https://github.com/metteghijsen" target="_blank" cursor-class="arrow">→
+                            Github </a><br>
+                            <a href="https://www.linkedin.com/in/mette-ghijsen-857594203/" target="_blank"
+                               cursor-class="arrow"> →
                                 LinkedIn</a>
                         </p>
                     </div>
@@ -298,15 +256,17 @@ Als je vragen hebt, neem vooral contact met me op. Ik help je graag!
                 </div>
             </div>
         </div>
-    </div>
+    </section>
+</main>
 
-    <a class="gotopbutton" id="gotopbutton" cursor-class="arrow" href="#"><i class="bi bi-arrow-up-short"></i></a>
+<a class="gotopbutton" id="gotopbutton" cursor-class="arrow" href="#"><i class="bi bi-arrow-up-short"></i></a>
 
 <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
 <script>
     AOS.init();
 </script>
 <script src="script/script.js"></script>
+
 </body>
 </html>
 
