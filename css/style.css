@@ -742,3 +742,32 @@ html, body {
         line-height: 40px;
     }
 }
+
+/*Project pages*/
+.project-header{
+    height: 100vh;
+}
+
+.project-title{
+    color: var(--text-color);
+    font-size: 110px;
+    display: flex;
+    justify-content: center;
+    cursor: default;
+    transition: 0.5s !important;
+    margin-top: 7%;
+}
+
+.project-title p{
+    margin: 0;
+    text-align: center;
+    font-family: Poppins-Bold, sans-serif;
+}
+
+.project-description p{
+    font-family: "Montserrat-Regular", sans-serif;
+    color: white;
+    font-size: 22px;
+    text-align: center;
+    cursor: default;
+}
