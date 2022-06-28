@@ -600,7 +600,7 @@ html, body {
 }
 
 .contact{
-    padding-bottom: 25vh;
+    padding: 15vh 0 25vh 0;
     background-color: var(--background-color);
 }
 
