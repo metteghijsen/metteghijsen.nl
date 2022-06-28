@@ -52,11 +52,8 @@ html, body {
     0% {
         transform: translateY(0vh);
     }
-    50% {
-        transform: translateY(2vh);
-    }
     100% {
-        transform: translateY(0vh);
+        transform: translateY(2vh);
     }
 }
 
@@ -334,14 +331,10 @@ html, body {
     text-align: center;
     line-height: 60px;
     font-size: 60px;
-    color: var(--text-color) ;
-    transition: all .2s;
-    animation: moveDown 5s infinite;
-}
-
-.scrolldown:hover{
-    transform: translateY(10px) !important;
-    color: var(--text-color)  !important;
+    animation: moveDown 2s infinite;
+    animation-direction: alternate;
+    animation-timing-function: ease-in-out;
+    color: var(--text-color) !important;
 }
 
 .gotopbutton{
@@ -380,6 +373,9 @@ html, body {
     top: 150%;
     left: 90%;
     z-index: 10;
+    animation: moveDown 2s infinite;
+    animation-direction: alternate;
+    animation-timing-function: ease-in-out;
 }
 
 .nicetomeetyou-shapes>.circle{
@@ -388,7 +384,6 @@ html, body {
     left: -3vw;
     top: -20vh;
     border-width: 30px;
-    animation: moveDown 5s infinite;
 }
 
 .nicetomeetyou-shapes>.triangle{
@@ -396,7 +391,6 @@ html, body {
     top: 40vh;
     right: 5vw;
     transform: rotate(107deg) scale(3.5);
-    /*animation: moveDown 5s infinite;*/
 }
 
 .nicetomeetyou-shapes>.square{
@@ -404,7 +398,6 @@ html, body {
     top: -12vh;
     right: 9vw;
     position: absolute;
-    /*animation: moveDown 5s infinite;*/
 }
 
 .nicetomeetyou-shapes>.diamond{
@@ -415,11 +408,10 @@ html, body {
     right: 16vw;
     top: 12vh;
     transform: scale(3.5) rotate(45deg);
-    /*animation: moveDown 5s infinite;*/
 }
 
 
-.story-title-outline h2{
+.title-outline h2{
     font-family: Poppins-Bold, sans-serif;
     font-size: 70px;
     white-space: nowrap;
@@ -430,27 +422,17 @@ html, body {
     transition: color .5s ease !important;
 }
 
-.story-title-outline h2:hover{
+.title-outline h2:hover{
     color: #333;
     transition: color .5s ease !important;
 }
 
-.story-title-filled h2{
+.title-filled h2{
     font-family: Poppins-Bold, sans-serif;
     font-size: 70px;
     white-space: nowrap;
     margin: 10px 0;
     color: var(--text-color);
-}
-
-.story-description{
-    font-family: Montserrat-Regular, sans-serif;
-    color: var(--text-color);
-    margin: 25px 0;
-    padding-top: 20px;
-    opacity: .8;
-    font-size: 16px;
-    cursor: default;
 }
 
 /*Skills*/
@@ -744,8 +726,22 @@ html, body {
 }
 
 /*Project pages*/
+.project-header-nav{
+    background-color: transparent;
+    position: relative;
+    top: 0;
+    left: 0;
+}
+
 .project-header{
     height: 100vh;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    top: 0;
+    left: 0;
 }
 
 .project-title{
@@ -753,6 +749,7 @@ html, body {
     font-size: 110px;
     display: flex;
     justify-content: center;
+    align-items: center;
     cursor: default;
     transition: 0.5s !important;
     margin-top: 7%;
@@ -764,10 +761,44 @@ html, body {
     font-family: Poppins-Bold, sans-serif;
 }
 
-.project-description p{
+.project-subtitle p{
     font-family: "Montserrat-Regular", sans-serif;
     color: white;
     font-size: 22px;
     text-align: center;
     cursor: default;
+}
+
+.project-description{
+    height: 100%;
+    padding: 15vh 0 15vh 0;
+}
+
+.description-text{
+    font-family: Montserrat-Regular, sans-serif;
+    color: var(--text-color);
+    margin: 25px 0;
+    padding-top: 20px;
+    opacity: .8;
+    font-size: 16px;
+    cursor: default;
+    text-align: left;
+}
+
+.description-text a{
+    color: var(--text-color);
+    text-decoration: none;
+    opacity: .7;
+}
+
+.project-image img{
+    width: 100%;
+    height: auto;
+    border-radius: 20px;
+    margin: 15px 0 15px 0
+}
+
+.project-image-header img{
+    width: 100%;
+    height: auto;
 }
