@@ -479,7 +479,7 @@ html, body {
     border: 0;
     font-size: 100%;
     vertical-align: baseline;
-    height: 120vh;
+    height: 160vh;
 }
 
 .cases-header{
@@ -572,6 +572,10 @@ html, body {
 
 .fontys-engineering{
     background-image: url("../img/fontysbackground.png");
+}
+
+.portfolio-sem2{
+    background-image: url("../img/mettebackground.png");
 }
 
 /*Toolset styling*/
