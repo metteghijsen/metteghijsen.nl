@@ -377,7 +377,7 @@ html, body {
 
 .nicetomeetyou{
     padding-top: 15vh;
-    height: 120vh
+    height: 85vh
 }
 
 .nicetomeetyou-shapes{
@@ -479,7 +479,7 @@ html, body {
     border: 0;
     font-size: 100%;
     vertical-align: baseline;
-    height: 120vh;
+    height: 100vh;
 }
 
 .cases-header{
@@ -569,6 +569,41 @@ html, body {
 .salvemundi{
     background-color: #452572;
     background-image: url("../img/samubackground.png");
+}
+
+/*Toolset styling*/
+.toolset-items{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.toolset-item{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin-bottom: 2vh;
+}
+
+.toolset-item>img{
+    height: 12vh;
+    width: auto;
+}
+
+.toolset-item>h3{
+    font-family: Montserrat-Bold, sans-serif;
+    font-size: 24px;
+    text-align: center;
+    color: var(--text-color);
+    margin-top: 1vh;
+}
+
+.toolset-item>p{
+    font-family: Montserrat-Regular, sans-serif;
+    font-size: 18px;
+    text-align: center;
+    color: var(--text-color);
+    margin-top: -1vh;
 }
 
 /*Partners styling*/
