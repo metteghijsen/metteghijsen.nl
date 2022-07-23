@@ -14,7 +14,7 @@ const calculateAge = () => {
     return Math.abs(ageDate.getUTCFullYear() - 1970);
 }
 
-heroDescription.innerHTML = "A " + calculateAge() + " year old junior web developer.<br>\n" + "Want to learn more about me?"
+heroDescription.innerHTML = "A " + calculateAge() + " year old webdeveloper.<br>\n" + "Want to learn more about me?"
 profileDescription.innerHTML = "  My name is Mette. I am " + calculateAge() + " years old and I am a junior web developer.\n" +
     "                                <br>\n" +
     "                                Welcome to my portfolio website!\n" +
@@ -23,5 +23,7 @@ profileDescription.innerHTML = "  My name is Mette. I am " + calculateAge() + " 
     "                                Fontys University of Applied Sciences in Eindhoven 🇳🇱.\n" +
     "                                I am learning new things every day, so I am constantly improving my skills.\n" +
     "                                Feel free to have a look around."
-copyrightEle.innerHTML = "Mette Ghijsen © " + currentYear + " - Update 1.0" +
-    "                                <br>\n" + "<i>Inspired by " + "<a href=\"https://jordyarntz.com/\">Jordy Arntz</a></i>";
+copyrightEle.innerHTML = "Mette Ghijsen © " + currentYear + " - Update 1.0"
+    // +
+    // "                                <br>\n" + "<i>Inspired by " + "<a href=\"https://jordyarntz.com/\">Jordy Arntz</a></i>"
+;
