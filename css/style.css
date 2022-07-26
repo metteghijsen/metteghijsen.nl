@@ -248,7 +248,7 @@ html, body {
     transition: ease .5s;
 }
 
-.nav-logo {
+.nav-logo{
     width: 5%;
     z-index: 5;
 }
@@ -457,7 +457,7 @@ html, body {
 
 .skill-bar{
     width: 100%;
-    background-color: var(--text-color);
+    background-color: #333333;
     border-radius: 30px;
 }
 
@@ -473,6 +473,7 @@ html, body {
 
     font-family: Montserrat-Regular, sans-serif;
     color: var(--text-color);
+    opacity: .7;
 }
 
 .skill-details p{
@@ -480,8 +481,8 @@ html, body {
 }
 
 .fill{
-    background-color: #333333;
     border-radius: 30px;
+    background-color: var(--text-color);
 }
 
 .html{
