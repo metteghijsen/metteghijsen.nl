@@ -377,7 +377,7 @@ html, body {
 
 .nicetomeetyou{
     padding-top: 15vh;
-    height: 85vh
+    height: 100vh
 }
 
 .nicetomeetyou-shapes{
@@ -447,29 +447,135 @@ html, body {
     color: var(--text-color);
 }
 
-/*Skills*/
-.skills-logos{
+/*skills*/
+.skills{
+    height: 50vh;
+}
+
+.skill-container{
+    margin-bottom: 3vh;
+}
+
+.skill-bar{
+    width: 100%;
+    background-color: var(--text-color);
+    border-radius: 30px;
+}
+
+.skill{
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+
+.skill-details{
+    width: 100%;
     display: flex;
-    flex-direction: column;
+    justify-content: space-between;
+
+    font-family: Montserrat-Regular, sans-serif;
+    color: var(--text-color);
 }
 
-.skills-logos>div{
-    display: flex;
-    justify-content: center;
+.skill-details p{
+    margin-bottom: 3px;
 }
 
-.skills-logos img{
-    width: 10%;
-    height: auto;
-    opacity: .8;
-    filter: grayscale(100%);
-    transition: ease .5s;
-    margin: 10px;
+.fill{
+    background-color: #333333;
+    border-radius: 30px;
 }
 
-.skills-logos img:hover{
-    filter: grayscale(0);
-    transition: ease .5s;
+.html{
+    width: 0;
+    animation: html-fill 1.5s forwards;
+}
+
+.css{
+    width: 0;
+    animation: css-fill 1.5s forwards;
+}
+
+.javascript{
+    width: 0;
+    animation: javascript-fill 1.5s forwards;
+}
+
+.vue{
+    width: 0;
+    animation: vue-fill 1.5s forwards;
+}
+
+.vue{
+    width: 0;
+    animation: vue-fill 1.5s forwards;
+}
+
+.photoshop{
+    width: 0;
+    animation: ps-fill 1.5s forwards;
+}
+
+.figma{
+    width: 0;
+    animation: figma-fill 1.5s forwards;
+}
+
+.adobexd{
+    width: 0;
+    animation: adobexd-fill 1.5s forwards;
+}
+
+.indesign{
+    width: 0;
+    animation: indesign-fill 1.5s forwards;
+}
+
+@keyframes html-fill{
+    100%{
+        width: 90%;
+    }
+}
+
+@keyframes css-fill{
+    100%{
+        width: 90%;
+    }
+}
+
+@keyframes javascript-fill{
+    100%{
+        width: 60%;
+    }
+}
+
+@keyframes vue-fill{
+    100%{
+        width: 15%;
+    }
+}
+
+@keyframes ps-fill{
+    100%{
+        width: 70%;
+    }
+}
+
+@keyframes figma-fill{
+    100%{
+        width: 60%;
+    }
+}
+
+@keyframes adobexd-fill{
+    100%{
+        width: 60%;
+    }
+}
+
+@keyframes indesign-fill{
+    100%{
+        width: 20%;
+    }
 }
 
 /*Cases*/
@@ -479,7 +585,7 @@ html, body {
     border: 0;
     font-size: 100%;
     vertical-align: baseline;
-    height: 160vh;
+    height: 120vh;
 }
 
 .cases-header{
@@ -579,6 +685,20 @@ html, body {
 }
 
 /*Toolset styling*/
+.toolset{
+    height: 40vh;
+}
+
+.toolset h2{
+    font-family: Poppins-Bold, sans-serif;
+    color: var(--text-color);
+    font-size: 70px;
+    margin: 0 0 30px 0;
+    line-height: 100px;
+    cursor: default;
+    text-align: center;
+}
+
 .toolset-items{
     display: flex;
     justify-content: center;
@@ -625,8 +745,7 @@ html, body {
     font-size: 70px;
     margin: 0 0 30px 0;
     line-height: 100px;
-    display: flex;
-    justify-content: center;
+    text-align: center;
     cursor: default;
 }
 
@@ -761,17 +880,6 @@ html, body {
     }
     .nicetomeetyou h2{
         font-size: 40px;
-    }
-    .skills h2{
-        font-size: 40px;
-        line-height: 40px;
-    }
-    .skills-logos svg{
-        width: 30%;
-        height: auto;
-        display: flex;
-        opacity: .8;
-        margin: 30px;
     }
     .partners h2{
         font-size: 40px;
