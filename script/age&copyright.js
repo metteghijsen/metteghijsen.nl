@@ -21,9 +21,10 @@ profileDescription.innerHTML = "  My name is Mette. I am " + calculateAge() + " 
     "                                <br><br>\n" +
     "                                I am currently studying IT & Media Design at\n" +
     "                                Fontys University of Applied Sciences in Eindhoven 🇳🇱.\n" +
+    " In September 2022, I will begin the second semester of my second year. In this half year I will do the specialization Smart Mobile. I hope this will allow me to learn even more about Mobile and Frontend development. In addition, I would really like to learn more about VueJS. " +
     "                                I am learning new things every day, so I am constantly improving my skills.\n" +
     "                                Feel free to have a look around."
 copyrightEle.innerHTML = "Mette Ghijsen © " + currentYear + " - Update 1.0"
-    // +
-    // "                                <br>\n" + "<i>Inspired by " + "<a href=\"https://jordyarntz.com/\">Jordy Arntz</a></i>"
+// +
+// "                                <br>\n" + "<i>Inspired by " + "<a href=\"https://jordyarntz.com/\">Jordy Arntz</a></i>"
 ;

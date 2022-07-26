@@ -422,7 +422,6 @@ html, body {
     transform: scale(3.5) rotate(45deg);
 }
 
-
 .title-outline h2{
     font-family: Poppins-Bold, sans-serif;
     font-size: 70px;
@@ -525,9 +524,9 @@ html, body {
     animation: adobexd-fill 1.5s forwards;
 }
 
-.indesign{
+.firebase{
     width: 0;
-    animation: indesign-fill 1.5s forwards;
+    animation: firebase-fill 1.5s forwards;
 }
 
 @keyframes html-fill{
@@ -572,7 +571,7 @@ html, body {
     }
 }
 
-@keyframes indesign-fill{
+@keyframes firebase-fill{
     100%{
         width: 20%;
     }
@@ -585,7 +584,7 @@ html, body {
     border: 0;
     font-size: 100%;
     vertical-align: baseline;
-    height: 120vh;
+    height: 104vh;
 }
 
 .cases-header{
@@ -739,17 +738,18 @@ html, body {
     background-color: var(--background-color);
 }
 
-.partners h2{
-    font-family: Poppins-Bold, sans-serif;
-    color: var(--text-color);
-    font-size: 70px;
-    margin: 0 0 30px 0;
-    line-height: 100px;
-    text-align: center;
-    cursor: default;
-}
+/*.partners h2{*/
+/*    font-family: Poppins-Bold, sans-serif;*/
+/*    color: var(--text-color);*/
+/*    font-size: 70px;*/
+/*    margin: 0 0 30px 0;*/
+/*    line-height: 100px;*/
+/*    text-align: center;*/
+/*    cursor: default;*/
+/*}*/
 
 .partner-logos{
+    margin-top: 4vh;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -771,9 +771,12 @@ html, body {
     transition: ease .5s;
 }
 
+/*contact styling*/
+
 .contact{
     padding: 15vh 0 25vh 0;
     background-color: var(--background-color);
+    position: relative;
 }
 
 .contact h2{
@@ -811,6 +814,48 @@ html, body {
 
 .contact-description-heading{
     margin-bottom: 40px;
+}
+
+.contact-shapes{
+    position: absolute;
+    top: 30%;
+    left: 90%;
+    z-index: 10;
+    animation: moveDown 2s infinite;
+    animation-direction: alternate;
+    animation-timing-function: ease-in-out;
+}
+
+.contact-shapes>.circle{
+    position: absolute;
+    padding: 150px;
+    left: -3vw;
+    top: -20vh;
+    border-width: 30px;
+}
+
+.contact-shapes>.triangle{
+    position: absolute;
+    top: 40vh;
+    right: 5vw;
+    transform: rotate(107deg) scale(3.5);
+}
+
+.contact-shapes>.square{
+    transform: scale(3);
+    top: -12vh;
+    right: 9vw;
+    position: absolute;
+}
+
+.contact-shapes>.diamond{
+    background-color: var(--green);
+    padding: 15px;
+    margin: 10px;
+    position: absolute;
+    right: 16vw;
+    top: 12vh;
+    transform: scale(3.5) rotate(45deg);
 }
 
 .copyright p{
