@@ -134,6 +134,10 @@ html, body {
     text-decoration: none;
 }
 
+a{
+    text-decoration: none;
+}
+
 .image-container{
     overflow: hidden;
     cursor: pointer;
@@ -505,9 +509,9 @@ html, body {
     animation: vue-fill 1.5s forwards;
 }
 
-.vue{
+.php{
     width: 0;
-    animation: vue-fill 1.5s forwards;
+    animation: php-fill 1.5s forwards;
 }
 
 .photoshop{
@@ -528,6 +532,11 @@ html, body {
 .firebase{
     width: 0;
     animation: firebase-fill 1.5s forwards;
+}
+
+.indesign{
+    width: 0;
+    animation: indesign-fill 1.5s forwards;
 }
 
 @keyframes html-fill{
@@ -554,6 +563,12 @@ html, body {
     }
 }
 
+@keyframes php-fill{
+    100%{
+        width: 15%;
+    }
+}
+
 @keyframes ps-fill{
     100%{
         width: 70%;
@@ -575,6 +590,12 @@ html, body {
 @keyframes firebase-fill{
     100%{
         width: 20%;
+    }
+}
+
+@keyframes indesign-fill{
+    100%{
+        width: 30%;
     }
 }
 
