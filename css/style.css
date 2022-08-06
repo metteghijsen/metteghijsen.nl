@@ -44,6 +44,11 @@ html, body {
 }
 
 @font-face {
+    font-family: "Montserrat-Semibold";
+    src: url("../fonts/Montserrat-SemiBold.ttf") format("truetype");
+}
+
+@font-face {
     font-family: "Montserrat-Bold";
     src: url("../fonts/Montserrat-Bold.woff") format("woff");
 }
@@ -589,13 +594,40 @@ a{
 }
 
 /*Cases*/
+.filter-clicked{
+    background-color: var(--text-color) !important;
+}
+
+.filter-clicked p{
+    color: #333333 !important;
+}
+
+.filter-buttons{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.filterButton{
+    background-color: #333333;
+    border-radius: 100px;
+    height: 4vh;
+    margin: 0 10px 4vh 0;
+}
+
+.filterButton p{
+    /*font-family: Montserrat-Semibold, sans-serif;*/
+    font-family: Montserrat-Regular, sans-serif;
+    font-size: 22px;
+    text-align: center;
+    color: var(--text-color);
+    padding: 0 25px 0 25px;
+}
+
 .cases{
     margin: 0;
     padding: 0;
     border: 0;
-    font-size: 100%;
-    vertical-align: baseline;
-    height: 104vh;
 }
 
 .cases-header{
@@ -603,7 +635,7 @@ a{
     background-position: center;
     background-repeat: repeat-x;
     transform: scale(2.5);
-    margin: 5vh 0 25vh 0;
+    margin: 5vh 0 16vh 0;
     background-color: var(--background-color);
 }
 
@@ -745,19 +777,10 @@ a{
 
 /*Partners styling*/
 .partners{
-    margin: 30vh 0 15vh 0;
+    height: 45vh;
+    margin-top: 3vh;
     background-color: var(--background-color);
 }
-
-/*.partners h2{*/
-/*    font-family: Poppins-Bold, sans-serif;*/
-/*    color: var(--text-color);*/
-/*    font-size: 70px;*/
-/*    margin: 0 0 30px 0;*/
-/*    line-height: 100px;*/
-/*    text-align: center;*/
-/*    cursor: default;*/
-/*}*/
 
 .partner-logos{
     margin-top: 4vh;
@@ -767,18 +790,21 @@ a{
 }
 
 .partner-logos a img{
-    width: 80%;
+    width: 25vh;
     height: auto;
     display: flex;
-    margin: 0;
+    margin: 5vh;
     opacity: .5;
-    /*filter: grayscale(100%);*/
     transition: ease .5s;
+}
+
+.DjDeugniet{
+    width: 15vh !important;
+    box-sizing: border-box;
 }
 
 .partner-logos img:hover{
     opacity: 1;
-    /*filter: grayscale(0);*/
     transition: ease .5s;
 }
 

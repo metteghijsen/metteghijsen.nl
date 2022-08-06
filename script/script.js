@@ -39,8 +39,8 @@ window.addEventListener("scroll", () => {
 const cursor = document.querySelector('#cursor');
 const cursorCircle = cursor.querySelector('.cursor__circle');
 
-const mouse = { x: -100, y: -100 }; // mouse pointer's coordinates
-const pos = { x: 0, y: 0 }; // cursor's coordinates
+const mouse = {x: -100, y: -100}; // mouse pointer's coordinates
+const pos = {x: 0, y: 0}; // cursor's coordinates
 const speed = 0.1; // between 0 and 1
 
 const updateCoordinates = e => {
@@ -75,8 +75,8 @@ const updateCursor = () => {
     const angle = getAngle(diffX, diffY);
     const squeeze = getSqueeze(diffX, diffY);
 
-    const scale = 'scale(' + (1 + squeeze) + ', ' + (1 - squeeze) +')';
-    const rotate = 'rotate(' + angle +'deg)';
+    const scale = 'scale(' + (1 + squeeze) + ', ' + (1 - squeeze) + ')';
+    const rotate = 'rotate(' + angle + 'deg)';
     const translate = 'translate3d(' + pos.x + 'px ,' + pos.y + 'px, 0)';
 
     cursor.style.transform = translate;
@@ -93,13 +93,50 @@ requestAnimationFrame(loop);
 const cursorModifiers = document.querySelectorAll('[cursor-class]');
 
 cursorModifiers.forEach(curosrModifier => {
-    curosrModifier.addEventListener('mouseenter', function() {
+    curosrModifier.addEventListener('mouseenter', function () {
         const className = this.getAttribute('cursor-class');
         cursor.classList.add(className);
     });
 
-    curosrModifier.addEventListener('mouseleave', function() {
+    curosrModifier.addEventListener('mouseleave', function () {
         const className = this.getAttribute('cursor-class');
         cursor.classList.remove(className);
     });
 });
+
+//Content filter
+const items = document.getElementsByClassName("item");
+let allButton = document.getElementById("allBtn");
+let designButton = document.getElementById("designBtn");
+let webDevelopmentButton = document.getElementById("webDevelopmentBtn");
+let mobileDevelopmentButton = document.getElementById("mobileDevelopmentBtn");
+let fakeButton = document.getElementById("fakeButton")
+let buttonArray = [allButton, designButton, webDevelopmentButton, mobileDevelopmentButton, fakeButton];
+
+allButton.addEventListener("click", (event) => showTag(event, 'all'));
+designButton.addEventListener("click", (event) => showTag(event, 'design'));
+webDevelopmentButton.addEventListener("click", (event) => showTag(event, 'webDevelopment'));
+mobileDevelopmentButton.addEventListener("click", (event) => showTag(event, 'mobileDevelopment'));
+
+showTag = (event, tag) => {
+    for (let i = 0; i < items.length; i++) {
+        if (items[i].dataset.tags.includes(tag)) {
+            items[i].style.display = "flex";
+        } else {
+            items[i].style.display = "none";
+        }
+    }
+}
+
+buttonArray.forEach(button => {
+    button.addEventListener('click', () => {
+        buttonArray.forEach(selectedButton => {
+                if (selectedButton.classList.contains('filter-clicked')) {
+                    selectedButton.classList.remove('filter-clicked')
+                } else {
+                    button.classList.add('filter-clicked')
+                }
+            }
+        )
+    })
+})
