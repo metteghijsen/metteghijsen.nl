@@ -494,11 +494,6 @@ a{
     animation: html-fill 1.5s forwards;
 }
 
-.css{
-    width: 0;
-    animation: css-fill 1.5s forwards;
-}
-
 .javascript{
     width: 0;
     animation: javascript-fill 1.5s forwards;
@@ -541,19 +536,13 @@ a{
 
 @keyframes html-fill{
     100%{
-        width: 90%;
-    }
-}
-
-@keyframes css-fill{
-    100%{
-        width: 90%;
+        width: 100%;
     }
 }
 
 @keyframes javascript-fill{
     100%{
-        width: 60%;
+        width: 75%;
     }
 }
 
@@ -571,13 +560,13 @@ a{
 
 @keyframes ps-fill{
     100%{
-        width: 70%;
+        width: 90%;
     }
 }
 
 @keyframes figma-fill{
     100%{
-        width: 60%;
+        width: 70%;
     }
 }
 
@@ -589,7 +578,7 @@ a{
 
 @keyframes firebase-fill{
     100%{
-        width: 20%;
+        width: 35%;
     }
 }
 
@@ -690,19 +679,19 @@ a{
 
 .printpal{
     background-color: #1ad7a8;
-    background-image: url("../img/printpalbackground.png");
+    background-image: url("../img/cases-bg/printpalbackground.png");
 }
 
 .salvemundi{
-    background-image: url("../img/samubackground.png");
+    background-image: url("../img/cases-bg/samubackground.png");
 }
 
 .fontys-engineering{
-    background-image: url("../img/fontysbackground.png");
+    background-image: url("../img/cases-bg/fontysbackground.png");
 }
 
 .portfolio-sem2{
-    background-image: url("../img/mettebackground.png");
+    background-image: url("../img/cases-bg/mettebackground.png");
 }
 
 /*Toolset styling*/
