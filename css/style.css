@@ -211,6 +211,7 @@ a{
     justify-content: space-between;
     align-items: center;
     padding: 1rem 2.5rem 1rem 2.5rem;
+    margin: 1vh;
 
     position: fixed;
     top: 0;
@@ -257,8 +258,13 @@ a{
     transition: ease .5s;
 }
 
-.nav-logo{
-    width: 5%;
+/*.nav-logo{*/
+/*    width: 5%;*/
+/*    z-index: 5;*/
+/*}*/
+
+.nav-logo img{
+    width: 10%;
     z-index: 5;
 }
 
@@ -936,8 +942,8 @@ a{
         margin: 2.5rem 0;
     }
 
-    .nav-logo {
-        width: 15%;
+    .nav-logo img{
+        width: 10%;
     }
 
     .hamburger {
@@ -962,10 +968,6 @@ a{
     }
     .nicetomeetyou h2{
         font-size: 40px;
-    }
-    .partners h2{
-        font-size: 40px;
-        line-height: 40px;
     }
     .partner-logos svg{
         width: 30%;
