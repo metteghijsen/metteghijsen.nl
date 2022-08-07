@@ -18,6 +18,10 @@ html, body {
     user-select: none;
 }
 
+body{
+    overflow-x: hidden;
+}
+
 /* width */
 ::-webkit-scrollbar {
     display: none;
@@ -467,7 +471,7 @@ a{
 }
 
 .skill-container{
-    margin-bottom: 3vh;
+    margin: 3vh 0 3vh 0;
 }
 
 .skill-bar{
@@ -617,7 +621,7 @@ a{
 .filterButton{
     background-color: #333333;
     border-radius: 100px;
-    height: 4vh;
+    height: 6vh;
     margin: 0 10px 4vh 0;
 }
 
@@ -628,6 +632,7 @@ a{
     text-align: center;
     color: var(--text-color);
     padding: 0 25px 0 25px;
+    line-height: 6vh;
 }
 
 .cases{
