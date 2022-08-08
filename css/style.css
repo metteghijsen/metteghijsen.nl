@@ -374,6 +374,7 @@ a{
     position: fixed;
     bottom: 40px;
     right: 50px;
+    z-index: 99;
 
     text-decoration: none;
     text-align: center;
@@ -817,6 +818,51 @@ a{
 .partner-logos img:hover{
     opacity: 1;
     transition: ease .5s;
+}
+/*playground styling*/
+
+.playground{
+    background-color: white;
+    height: 100%;
+    padding-top: 10vh;
+}
+
+.playground .title-filled h2{
+    color: var(--background-color);
+}
+
+.playgr-projects {
+    margin: 5vh 0 5vh 0;
+}
+
+.playgr-project{
+    height: 30vh;
+    text-decoration: none;
+    transition: all .5s ease;
+    box-sizing: border-box;
+    border: 5px solid transparent;
+
+    background-clip:padding-box;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-color: black;
+    background-size: cover;
+}
+
+.playgr-project:hover{
+
+}
+
+.valorant{
+    background-image: url("../img/playground-bg/valorant.png");
+}
+
+.simonsays{
+    background-image: url("../img/playground-bg/simonsays.gif");
+}
+
+.rps{
+    background-image: url("../img/playground-bg/rockpaperscissors.gif");
 }
 
 /*contact styling*/
