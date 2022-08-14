@@ -741,7 +741,7 @@ a{
 }
 
 .fontys-engineering{
-    background-image: url("../img/cases-bg/fontysbackground.png");
+    background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url("../img/cases-bg/fontysbackground.png");
 }
 
 .portfolio-sem2{
