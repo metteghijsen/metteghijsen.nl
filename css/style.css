@@ -824,7 +824,8 @@ a{
 .playground{
     background-color: white;
     height: 100%;
-    padding-top: 10vh;
+    padding: 10vh 0 10vh 0;
+    margin-bottom: 12vh;
 }
 
 .playground .title-filled h2{
@@ -832,7 +833,7 @@ a{
 }
 
 .playgr-projects {
-    margin: 5vh 0 5vh 0;
+    margin: 5vh 0 0 0;
 }
 
 .playgr-project{
@@ -863,6 +864,18 @@ a{
 
 .rps{
     background-image: url("../img/playground-bg/rockpaperscissors.gif");
+}
+
+.css-snake{
+    background-image: url("../img/playground-bg/css-snake.gif");
+}
+
+.stopwatch{
+    background-image: url("../img/playground-bg/stopwatch.gif");
+}
+
+.metris{
+    background-image: url("../img/playground-bg/metris.gif")
 }
 
 /*contact styling*/
