@@ -745,7 +745,7 @@ a{
 }
 
 .portfolio-sem2{
-    background-image: url("../img/cases-bg/mettebackground.png");
+    background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),url("../img/cases-bg/mettebackground.png");
 }
 
 /*Toolset styling*/
