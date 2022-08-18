@@ -277,9 +277,17 @@ a{
 /*    z-index: 5;*/
 /*}*/
 
-.nav-logo img{
+a.nav-logo{
     width: 10%;
+}
+
+.nav-logo img{
+    width: 45%;
     z-index: 5;
+}
+
+@media screen {
+    
 }
 
 /*Home-styling*/
