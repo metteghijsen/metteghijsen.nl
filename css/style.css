@@ -286,10 +286,6 @@ a.nav-logo{
     z-index: 5;
 }
 
-@media screen {
-    
-}
-
 /*Home-styling*/
 
 .home-header{
@@ -1025,7 +1021,8 @@ a.nav-logo{
     }
 
     .nav-logo img{
-        width: 10%;
+        width: 130%;
+        margin-left: -2vh;
     }
 
     .hamburger {
@@ -1061,6 +1058,23 @@ a.nav-logo{
     .contact h2{
         font-size: 40px;
         line-height: 40px;
+    }
+
+    .playground h2{
+        font-size: 40px;
+        line-height: 40px;
+    }
+
+    .nicetomeetyou-shapes{
+        display: none;
+    }
+
+    .contact-shapes {
+        display: none;
+    }
+
+    .partner-logos{
+
     }
 }
 
