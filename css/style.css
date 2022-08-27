@@ -740,6 +740,10 @@ a.nav-logo{
     background-image: url("../img/cases-bg/printpalbackground.png");
 }
 
+.nore{
+    background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),url("../img/cases-bg/norebackground.png")
+}
+
 .salvemundi{
     background-image: url("../img/cases-bg/samubackground.png");
 }
