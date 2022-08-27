@@ -899,7 +899,7 @@ a.nav-logo{
 /*contact styling*/
 
 .contact{
-    padding: 15vh 0 25vh 0;
+    padding: 30vh 0 25vh 0;
     background-color: var(--background-color);
     position: relative;
 }
@@ -1158,4 +1158,29 @@ a.nav-logo{
 .project-image-header img{
     width: 100%;
     height: auto;
+}
+
+.whitespace{
+    height: 50vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--text-color);
+}
+
+.whitespace h2{
+    font-family: Poppins-Bold, sans-serif;
+    color: var(--background-color);
+    font-size: 70px;
+    margin: 0 0 30px 0;
+    line-height: 100px;
+    cursor: default;
+    text-align: center;
+}
+
+.next-project{
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
