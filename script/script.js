@@ -108,13 +108,15 @@ cursorModifiers.forEach(curosrModifier => {
 const items = document.getElementsByClassName("item");
 let allButton = document.getElementById("allBtn");
 let designButton = document.getElementById("designBtn");
+let webDesignButton = document.getElementById("webDesignBtn");
 let webDevelopmentButton = document.getElementById("webDevelopmentBtn");
 let mobileDevelopmentButton = document.getElementById("mobileDevelopmentBtn");
 let fakeButton = document.getElementById("fakeButton")
-let buttonArray = [allButton, designButton, webDevelopmentButton, mobileDevelopmentButton, fakeButton];
+let buttonArray = [allButton, designButton, webDesignButton, webDevelopmentButton, mobileDevelopmentButton, fakeButton];
 
 allButton.addEventListener("click", (event) => showTag(event, 'all'));
 designButton.addEventListener("click", (event) => showTag(event, 'design'));
+webDesignButton.addEventListener("click", (event) => showTag(event, 'webDesign'));
 webDevelopmentButton.addEventListener("click", (event) => showTag(event, 'webDevelopment'));
 mobileDevelopmentButton.addEventListener("click", (event) => showTag(event, 'mobileDevelopment'));
 
