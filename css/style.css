@@ -566,7 +566,7 @@ a.nav-logo{
 
 @keyframes html-fill{
     100%{
-        width: 100%;
+        width: 90%;
     }
 }
 
@@ -1001,7 +1001,22 @@ a.nav-logo{
     display: none;
 }
 
+/*tijdelijke css*/
+@media only screen and (max-width: 1038px) {
+    .partner-logos{
+        display: none;
+    }
+
+    .filter-buttons{
+        display: none;
+    }
+}
+/*eind tijdelijke css*/
+
 @media only screen and (max-width: 768px) {
+    body{
+        overflow-x: hidden;
+    }
     .nav-menu {
         position: fixed;
         left: -100%;
