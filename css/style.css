@@ -1016,6 +1016,10 @@ a.nav-logo{
                 0 10px 27px rgba(0, 0, 0, 0.05);
     }
 
+    .nav-bar{
+        position: fixed;
+    }
+
     .nav-menu.active {
         left: 0;
     }
