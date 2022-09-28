@@ -15,7 +15,7 @@ const calculateAge = () => {
 }
 
 heroDescription.innerHTML = "A " + calculateAge() + " year old webdeveloper.<br>\n" + "Want to learn more about me?"
-profileDescription.innerHTML = "  My name is Mette. I am " + calculateAge() + " years old and I am a junior web developer.\n" +
+profileDescription.innerHTML = "  My name is Mette. I am " + calculateAge() + " years old and I am a web developer.\n" +
     "                                <br>\n" +
     "                                Welcome to my portfolio website!\n" +
     "                                <br><br>\n" +
