@@ -105,40 +105,41 @@ cursorModifiers.forEach(curosrModifier => {
 });
 
 //Content filter
-const items = document.getElementsByClassName("item");
-let allButton = document.getElementById("allBtn");
-let designButton = document.getElementById("designBtn");
-let webDesignButton = document.getElementById("webDesignBtn");
-let webDevelopmentButton = document.getElementById("webDevelopmentBtn");
-let mobileDevelopmentButton = document.getElementById("mobileDevelopmentBtn");
-let fakeButton = document.getElementById("fakeButton")
-let buttonArray = [allButton, designButton, webDesignButton, webDevelopmentButton, mobileDevelopmentButton, fakeButton];
 
-allButton.addEventListener("click", (event) => showTag(event, 'all'));
-designButton.addEventListener("click", (event) => showTag(event, 'design'));
-webDesignButton.addEventListener("click", (event) => showTag(event, 'webDesign'));
-webDevelopmentButton.addEventListener("click", (event) => showTag(event, 'webDevelopment'));
-mobileDevelopmentButton.addEventListener("click", (event) => showTag(event, 'mobileDevelopment'));
-
-showTag = (event, tag) => {
-    for (let i = 0; i < items.length; i++) {
-        if (items[i].dataset.tags.includes(tag)) {
-            items[i].style.display = "flex";
-        } else {
-            items[i].style.display = "none";
-        }
-    }
-}
-
-buttonArray.forEach(button => {
-    button.addEventListener('click', () => {
-        buttonArray.forEach(selectedButton => {
-                if (selectedButton.classList.contains('filter-clicked')) {
-                    selectedButton.classList.remove('filter-clicked')
-                } else {
-                    button.classList.add('filter-clicked')
-                }
-            }
-        )
-    })
-})
+// const items = document.getElementsByClassName("item");
+// let allButton = document.getElementById("allBtn");
+// let designButton = document.getElementById("designBtn");
+// let webDesignButton = document.getElementById("webDesignBtn");
+// let webDevelopmentButton = document.getElementById("webDevelopmentBtn");
+// let mobileDevelopmentButton = document.getElementById("mobileDevelopmentBtn");
+// let fakeButton = document.getElementById("fakeButton")
+// let buttonArray = [allButton, designButton, webDesignButton, webDevelopmentButton, mobileDevelopmentButton, fakeButton];
+//
+// allButton.addEventListener("click", (event) => showTag(event, 'all'));
+// designButton.addEventListener("click", (event) => showTag(event, 'design'));
+// webDesignButton.addEventListener("click", (event) => showTag(event, 'webDesign'));
+// webDevelopmentButton.addEventListener("click", (event) => showTag(event, 'webDevelopment'));
+// mobileDevelopmentButton.addEventListener("click", (event) => showTag(event, 'mobileDevelopment'));
+//
+// showTag = (event, tag) => {
+//     for (let i = 0; i < items.length; i++) {
+//         if (items[i].dataset.tags.includes(tag)) {
+//             items[i].style.display = "flex";
+//         } else {
+//             items[i].style.display = "none";
+//         }
+//     }
+// }
+//
+// buttonArray.forEach(button => {
+//     button.addEventListener('click', () => {
+//         buttonArray.forEach(selectedButton => {
+//                 if (selectedButton.classList.contains('filter-clicked')) {
+//                     selectedButton.classList.remove('filter-clicked')
+//                 } else {
+//                     button.classList.add('filter-clicked')
+//                 }
+//             }
+//         )
+//     })
+// })
