@@ -1014,7 +1014,7 @@ a.nav-logo{
 }
 /*eind tijdelijke css*/
 
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 1050px) {
     body{
         overflow-x: hidden;
     }
