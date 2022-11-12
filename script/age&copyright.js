@@ -1,7 +1,7 @@
 //Leeftijd en Copyrightjaar automatisch updaten
 
 let copyrightEle = document.getElementById("copyright");
-let heroDescription = document.getElementById("description");
+// let heroDescription = document.getElementById("description");
 let profileDescription = document.getElementById("description2");
 
 let current = new Date();
@@ -14,7 +14,7 @@ const calculateAge = () => {
     return Math.abs(ageDate.getUTCFullYear() - 1970);
 }
 
-heroDescription.innerHTML = "A " + calculateAge() + " year old webdeveloper.<br>\n" + "Want to learn more about me?"
+// heroDescription.innerHTML = "A " + calculateAge() + " year old webdeveloper.<br>\n" + "Want to learn more about me?"
 profileDescription.innerHTML = "  My name is Mette. I am " + calculateAge() + " years old and I am a web developer.\n" +
     "                                <br>\n" +
     "                                Welcome to my portfolio website!\n" +
