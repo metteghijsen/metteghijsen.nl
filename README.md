@@ -3,7 +3,7 @@
 
 
 ## Project description
-This is the portfolio website I use to show my work. Feel free to take a look in this repository if you're curious how this site is made! <br> If you have any questions, do not hesitate to contact me via mette.ghijsen@student.fontys.nl :).
+This is the portfolio website I use to show my work. Feel free to take a look in this repository if you're curious how this site is made! <br> If you have any questions, do not hesitate to contact me via info@metteghijsen.nl :).
 
 ## Installation
 You can "install" this web page by downloading it and running it on a live server. You could use an external application such as XAMPP for this purpose. IDEs like Visual Studio Code have this feature built in.
